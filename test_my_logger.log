@@ -1,0 +1,747 @@
+2025-02-03 16:53:23,143 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 16:53:24,129 INFO AppKt [main] ✅ 50 stations récupérées pour TOULON
+2025-02-03 16:53:24,181 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,195 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,196 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001764, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,196 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017629999999999998, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.86E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,197 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.86E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,198 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,198 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,199 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,199 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,200 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001688, SP95: 0.001803, SP98: 0.001859, 
+   E10: 0.001748, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,200 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001688, SP95: 0.001803, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,201 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,201 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,202 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.86E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,202 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001764, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,202 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,203 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,203 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017629999999999998, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.86E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,204 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001934, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,204 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,204 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: 0.001859, 
+   E10: 0.0017490000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,205 INFO AppKt [main] 🏪 null
+📍 Domaine des Sannes, TOULON-SUR-ALLIER
+⚙️ Services : Toilettes publiques/Douches/Laverie/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001748, SP95: null, SP98: 0.001917, 
+   E10: 0.0018369999999999999, E85: 9.64E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,206 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,207 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,207 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.0017649999999999999, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,208 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.0019450000000000001, 
+   E10: 0.001835, E85: 7.840000000000001E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,208 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.001742, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,208 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.001742, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,209 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017620000000000001, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.840000000000001E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,209 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001935, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,210 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,212 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,212 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: 0.001865, 
+   E10: 0.001758, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,213 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,214 INFO AppKt [main] 🏪 null
+📍 ANGLE AV PASTEUR ET RN 97, TOULON LA VALETTE
+⚙️ Services : Vente de gaz domestique (Butane, Propane)/Wifi/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001696, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.0017490000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,214 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,216 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.001859, 
+   E10: 0.001746, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,216 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.840000000000001E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,217 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.001859, 
+   E10: 0.001746, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,217 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001682, SP95: null, SP98: 0.001839, 
+   E10: 0.001729, E85: 8.010000000000001E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,218 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017649999999999999, SP95: null, SP98: 0.001942, 
+   E10: 0.001832, E85: 7.840000000000001E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,218 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001944, 
+   E10: 0.0018340000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,218 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001938, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,219 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,219 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,220 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,220 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: null, 
+   E10: 0.001896, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,221 INFO AppKt [main] 🏪 null
+📍 A50 - AIRE DE LA BAIE DE LA CIOTAT (ex plaines baronnes) sens toulon -marseille, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,221 INFO AppKt [main] 🏪 null
+📍 A50 - AIRE DE LA BAIE DE LA CIOTAT (ex plaines baronnes) sens toulon -marseille, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:53:24,221 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:22,473 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 16:55:23,533 INFO AppKt [main] ✅ 50 stations récupérées pour TOULON
+2025-02-03 16:55:23,592 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,593 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,594 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001764, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,594 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017629999999999998, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.86E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,595 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.86E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,595 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,596 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,596 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,597 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,597 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001688, SP95: 0.001803, SP98: 0.001859, 
+   E10: 0.001748, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,598 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001688, SP95: 0.001803, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,598 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,599 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,599 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.86E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,600 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001764, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,600 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,601 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.001857, 
+   E10: 0.0017439999999999999, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,601 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017629999999999998, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.86E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,601 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001934, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,601 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.0017490000000000001, SP95: null, SP98: 0.001929, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,602 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: 0.001859, 
+   E10: 0.0017490000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,602 INFO AppKt [main] 🏪 null
+📍 Domaine des Sannes, TOULON-SUR-ALLIER
+⚙️ Services : Toilettes publiques/Douches/Laverie/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001748, SP95: null, SP98: 0.001917, 
+   E10: 0.0018369999999999999, E85: 9.64E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,603 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,603 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.0016790000000000002, SP95: null, SP98: 0.0018340000000000001, 
+   E10: 0.001724, E85: 7.99E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,603 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.0017649999999999999, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,603 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001776, SP95: null, SP98: 0.0019450000000000001, 
+   E10: 0.001835, E85: 7.840000000000001E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,604 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.001742, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,604 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.001742, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,604 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017620000000000001, SP95: null, SP98: 0.001939, 
+   E10: 0.001829, E85: 7.840000000000001E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,604 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001935, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,605 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,605 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,606 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: 0.001865, 
+   E10: 0.001758, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,606 INFO AppKt [main] 🏪 null
+📍 283 Rue Henri Sainte-Claire Deville, TOULON
+⚙️ Services : Station de gonflage/Piste poids lourds/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001694, SP95: 0.0017980000000000001, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,606 INFO AppKt [main] 🏪 null
+📍 ANGLE AV PASTEUR ET RN 97, TOULON LA VALETTE
+⚙️ Services : Vente de gaz domestique (Butane, Propane)/Wifi/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001696, SP95: null, SP98: 0.0018549999999999999, 
+   E10: 0.0017490000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,606 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,607 INFO AppKt [main] 🏪 null
+📍 AV INFANTERIE DE MARINE, TOULON
+⚙️ Services : Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage automatique/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.001859, 
+   E10: 0.001746, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,608 INFO AppKt [main] 🏪 null
+📍 160 BOULEVARD G.CLEMENCEAU, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Piste poids lourds/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001946, 
+   E10: 0.0018360000000000002, E85: 7.840000000000001E-4, GPLc: 0.001019
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,608 INFO AppKt [main] 🏪 null
+📍 322 AV.LE BELLEGOU RODE, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001689, SP95: null, SP98: 0.001859, 
+   E10: 0.001746, E85: 7.790000000000001E-4, GPLc: 9.99E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,608 INFO AppKt [main] 🏪 null
+📍 138 RUE PIERRE SEMARD LE TOULON, PERIGUEUX
+⚙️ Services : Relais colis/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Station de gonflage/Carburant additivé/Lavage automatique/Lavage manuel/Vente de gaz domestique (Butane, Propane)/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001682, SP95: null, SP98: 0.001839, 
+   E10: 0.001729, E85: 8.010000000000001E-4, GPLc: 9.85E-4
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,608 INFO AppKt [main] 🏪 null
+📍 508 AVENUE FOCH, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.0017649999999999999, SP95: null, SP98: 0.001942, 
+   E10: 0.001832, E85: 7.840000000000001E-4, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,609 INFO AppKt [main] 🏪 null
+📍 78 AV DE TOULON, MARSEILLE
+⚙️ Services : Boutique alimentaire/Station de gonflage/Lavage automatique/Wifi
+⛽ Prix Gazole: 0.001769, SP95: null, SP98: 0.001944, 
+   E10: 0.0018340000000000001, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,609 INFO AppKt [main] 🏪 null
+📍 ZONE ARTISANALE DU LARRY, TOULON SUR ALLIER
+⚙️ Services : Piste poids lourds/Vente d'additifs carburants
+⛽ Prix Gazole: 0.001938, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,609 INFO AppKt [main] 🏪 null
+📍 620 Rue David, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Station de gonflage/Carburant additivé/Lavage manuel/Services réparation/entretien/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,609 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,610 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,610 INFO AppKt [main] 🏪 null
+📍 A50 - Aire des freres lumieres (ex liouquet) - Sens Marseilles Toulon, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Aire de camping-cars/Piste poids lourds/Espace bébé/GNV/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24/DAB (Distributeur automatique de billets)
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: null, 
+   E10: 0.001896, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,610 INFO AppKt [main] 🏪 null
+📍 A50 - AIRE DE LA BAIE DE LA CIOTAT (ex plaines baronnes) sens toulon -marseille, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: 0.002019, 
+   E10: 0.001896, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,611 INFO AppKt [main] 🏪 null
+📍 A50 - AIRE DE LA BAIE DE LA CIOTAT (ex plaines baronnes) sens toulon -marseille, LA CIOTAT
+⚙️ Services : Toilettes publiques/Douches/Boutique alimentaire/Boutique non alimentaire/Restauration à emporter/Restauration sur place/Station de gonflage/Carburant additivé/Piste poids lourds/Espace bébé/Bornes électriques/Vente d'additifs carburants/Wifi/Automate CB 24/24
+⛽ Prix Gazole: 0.001866, SP95: null, SP98: null, 
+   E10: null, E85: null, GPLc: 0.001107
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:55:23,611 INFO AppKt [main] 🏪 null
+📍 2338 Avenue Joseph Gasquet, TOULON
+⚙️ Services : Toilettes publiques/Boutique alimentaire/Vente de fioul domestique/Station de gonflage/Carburant additivé/Lavage automatique/Vente de gaz domestique (Butane, Propane)
+⛽ Prix Gazole: 0.001779, SP95: null, SP98: 0.001939, 
+   E10: 0.001839, E85: null, GPLc: null
+📌 GPS: (null, null)
+--------------------------------------
+2025-02-03 16:56:04,263 INFO AppKt [main] 🔎 Recherche des stations-service à RENNES...
+2025-02-03 16:56:05,565 INFO AppKt [main] ✅ 50 stations récupérées pour RENNES
+2025-02-03 16:56:46,864 INFO AppKt [main] 🔎 Recherche des stations-service à RENNES...
+2025-02-03 16:56:48,343 INFO AppKt [main] ✅ 50 stations récupérées pour RENNES
+2025-02-03 16:57:37,371 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 16:57:38,512 INFO AppKt [main] ✅ 50 stations récupérées pour TOULON
+2025-02-03 16:58:52,316 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 16:58:53,494 INFO AppKt [main] ✅ 50 stations récupérées pour TOULON
+2025-02-03 16:59:13,936 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 16:59:15,285 INFO AppKt [main] ✅ 50 stations récupérées pour TOULON
+2025-02-03 17:00:17,778 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:00:18,635 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:00:19,770 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:00:21,095 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:03:16,511 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:03:17,357 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:03:18,582 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:03:19,451 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:10:33,999 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:10:34,597 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:10:35,677 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:10:36,518 INFO AppKt [main] 📅 Dernière mise à jour : null
+2025-02-03 17:10:36,521 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:11:44,886 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:11:45,654 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:11:47,353 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:11:48,195 INFO AppKt [main] 📅 Dernière mise à jour : null
+2025-02-03 17:11:48,212 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:34:49,788 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:34:50,408 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:34:51,606 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:34:52,470 INFO AppKt [main] 📅 Dernière mise à jour : null
+2025-02-03 17:34:52,488 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:35:20,967 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:35:21,994 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:35:23,053 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:35:23,842 INFO AppKt [main] 📅 Dernière mise à jour : null
+2025-02-03 17:35:23,845 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
+2025-02-03 17:38:46,906 INFO AppKt [main] 🔎 Recherche des stations-service à TOULON...
+2025-02-03 17:38:47,513 ERROR AppKt [main] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-03 17:38:48,551 INFO AppKt [main] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250202.xml
+2025-02-03 17:38:49,382 INFO AppKt [main] 📅 Dernière mise à jour : null
+2025-02-03 17:38:49,384 INFO AppKt [main] ✅ 8 stations récupérées pour TOULON
