@@ -1,25 +1,24 @@
 package org.isen.carburant.view.impl
 
 import org.isen.carburant.controller.FuelController
-import org.isen.carburant.data.Dot
 import org.isen.carburant.data.Shape
-import org.isen.carburant.data.impl.Carre
-import org.isen.carburant.data.impl.Rectangle
 import org.isen.carburant.view.IFuelView
 import org.isen.carburant.widget.Dessin
 import java.awt.*
-
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import java.beans.PropertyChangeEvent
 import javax.swing.*
 import javax.swing.border.EmptyBorder
 
+
 class ShapeView(val ctrl: FuelController): IFuelView, JFrame("Shape View"), ActionListener {
     private var xTxt = JTextField(10)
     private var yTxt = JTextField(10)
     //private val dessin = Dessin()
     private val checkBoxes = mutableMapOf<String, JCheckBox>()
+    private val shapeComboBox = JComboBox(arrayOf("A", "B", "C", "D"))
+
 
     private val dessin: Dessin
 
@@ -42,6 +41,17 @@ class ShapeView(val ctrl: FuelController): IFuelView, JFrame("Shape View"), Acti
         //contentPane.add(makeGuiSearch(), BorderLayout.)
         isVisible = false
         pack()
+
+        layout = FlowLayout()
+        add(makeShapePanel())
+
+        add(JLabel("Sélectionnez une forme :"))
+        add(shapeComboBox)
+
+        shapeComboBox.addActionListener {
+            val selectedShape = shapeComboBox.selectedItem as String
+            handleShapeSelection(selectedShape)
+        }
     }
 
 
@@ -212,5 +222,60 @@ class ShapeView(val ctrl: FuelController): IFuelView, JFrame("Shape View"), Acti
             val shape = Rectangle(dot, Color.RED, Dimension((1..200).random(), (1..200).random()))
             ctrl.addShape(shape)
         }*/
+    }
+}
+
+object DropdownMenuExample {
+    fun main(args: Array<String?>?) {
+        SwingUtilities.invokeLater({ DropdownFrame() })
+    }
+}
+
+internal class DropdownFrame : JFrame() {
+    private val dropdown: JComboBox<String>
+    private val selectedLabel: JLabel
+
+    init {
+        setTitle("Menu Déroulant Swing")
+        setSize(300, 200)
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        setLayout(FlowLayout())
+
+
+        val options: Array<String> = arrayOf("Option 1", "Option 2", "Option 3", "Option 4")
+        dropdown = JComboBox(options)
+        dropdown.addActionListener(DropdownListener())
+
+
+        selectedLabel = JLabel("Sélection : " + dropdown.getSelectedItem())
+
+        add(dropdown)
+        add(selectedLabel)
+
+        setVisible(true)
+    }
+
+    private inner class DropdownListener : ActionListener {
+        @Override
+        override fun actionPerformed(e: ActionEvent?) {
+            selectedLabel.setText("Sélection : " + dropdown.getSelectedItem())
+        }
+    }
+}
+
+private fun handleShapeSelection(shape: String) {
+    when (shape) {
+        "Option 1" -> {
+            // Logique derrière l'option 1
+        }
+        "Option 2" -> {
+            // Logique derrière l'option 2
+        }
+        "Option 3" -> {
+            // Logique derrière l'option 3
+        }
+        "Option 4" -> {
+            // Logique derrière l'option 4
+        }
     }
 }
