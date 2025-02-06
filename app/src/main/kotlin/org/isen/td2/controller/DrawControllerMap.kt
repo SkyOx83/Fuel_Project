@@ -1,5 +1,6 @@
 package org.isen.td2.controller
 
+
 import org.isen.td2.model.geoPosition
 import org.jxmapviewer.JXMapViewer
 import org.isen.td2.model.DrawMap
@@ -8,6 +9,7 @@ import org.isen.td2.model.DrawData
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.core.ResponseDeserializable
 import com.google.gson.Gson
+import com.google.gson.annotations.SerializedName
 import org.w3c.dom.Document
 import org.w3c.dom.Element
 import java.io.File
@@ -15,124 +17,266 @@ import java.io.FileInputStream
 import java.util.zip.ZipInputStream
 import javax.xml.parsers.DocumentBuilderFactory
 
-
-
 // Initialisation du logger
 private val logger = org.apache.logging.log4j.LogManager.getLogger("FuelAPI")
 
-// Modèle principal pour Opendatasoft
-data class FuelResponse(val nhits: Int, val records: List<Record>)
+// Modèle principal pour OpenDataSoft
+data class FuelResponse(val records: List<Record>)
 data class Record(val fields: FuelStation)
 
-// Structure pour FuelStation avec ajout de `update_date`
+// Structure des stations-service
 data class FuelStation(
-    val name: String?,
-    val address: String?,
-    val com_arm_name: String?,
-    val price_gazole: Double?,
-    val price_sp95: Double?,
-    val price_sp98: Double?,
-    val price_e10: Double?,
-    val price_e85: Double?,
-    val price_gplc: Double?,
-    val services: List<String>?,
-    val geo_point: List<Double>?,
-    val update_date: String? // Ajout de la date de mise à jour
-) {
+        @SerializedName("cp") val cp:String?,
+        @SerializedName("address") val address: String?,
+        @SerializedName("com_arm_name") val comArmName: String?,
+        @SerializedName("update") val updateDate: String?,
+        @SerializedName("price_gazole") val priceGazole: Double?,
+        @SerializedName("price_sp95") val priceSp95: Double?,
+        @SerializedName("price_sp98") val priceSp98: Double?,
+        @SerializedName("price_e10") val priceE10: Double?,
+        @SerializedName("price_e85") val priceE85: Double?,
+        @SerializedName("price_gplc") val priceGplc: Double?,
+        @SerializedName("services") val services: List<String>?,
+        @SerializedName("name") val name: String?,  // 🔥 Correction ici
+        @SerializedName("brand") val brand: String?, // 🛠 Ajout de la marque
+        val geo_point: List<Double>?,
+
+        )
+
+{
     class Deserializer : ResponseDeserializable<FuelResponse> {
         override fun deserialize(content: String): FuelResponse = Gson().fromJson(content, FuelResponse::class.java)
     }
 }
 
+// Fonction principale pour récupérer les stations depuis Opendatasoft
+fun fetchRecentStations(city: String): Pair<List<FuelStation>, String?> {
+    val url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/prix-des-carburants-j-1/records?where=com_arm_name=\"${city}\"&rows=2080&sort=update\n"
+    val (_, _, result) = url.httpGet().responseObject(FuelStation.Deserializer())
 
-class DrawControllerMap(private val model: DrawMap, private val modelData: DrawData) {
+    return result.fold(
+            success = {
+                val stations = it.records.map { record -> record.fields }
+                val lastUpdate = stations.mapNotNull { station -> station.updateDate }.maxOrNull()
+                Pair(stations, lastUpdate)
+            },
+            failure = {
+                logger.error("❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...")
+                fetchBackupStations(city)
+            }
+    )
+}
+
+// Fonction pour récupérer les stations depuis Roulez-Éco (ZIP contenant XML)
+fun fetchBackupStations(city: String): Pair<List<FuelStation>, String?> {
+    val backupUrl = "https://donnees.roulez-eco.fr/opendata/jour"
+    val (_, _, result) = backupUrl.httpGet().response()
+
+    return result.fold(
+            success = { responseData ->
+                val tempZipFile = File.createTempFile("roulez-eco", ".zip")
+                tempZipFile.writeBytes(responseData)
+
+                val extractedXml = extractXmlFromZip(tempZipFile)
+                if (extractedXml != null) {
+                    val result = parseXmlStations(extractedXml, city)
+
+                    // 🗑️ Supprimer les fichiers après utilisation
+                    deleteTempFiles(tempZipFile, extractedXml)
+
+                    return result
+                }
+
+                logger.error("❌ Impossible d'extraire le fichier XML du ZIP.")
+                Pair(emptyList(), null)
+
+            },
+            failure = {
+                logger.error("❌ Échec de récupération depuis Roulez-Éco. Aucune donnée disponible.")
+                Pair(emptyList(), null)
+            }
+
+    )
+
+}
+
+fun deleteTempFiles(zipFile: File?, xmlFile: File?) {
+    try {
+        if (xmlFile != null && xmlFile.exists()) {
+            xmlFile.delete()
+            logger.info("🗑️ Fichier XML supprimé : ${xmlFile.absolutePath}")
+        }
+
+        if (zipFile != null && zipFile.exists()) {
+            zipFile.delete()
+            logger.info("🗑️ Fichier ZIP supprimé : ${zipFile.absolutePath}")
+        }
+    } catch (e: Exception) {
+        logger.info("❌ Erreur lors de la suppression des fichiers temporaires : ${e.message}")
+    }
+}
+
+// Fonction pour extraire le fichier XML du ZIP
+fun extractXmlFromZip(zipFile: File): File? {
+    ZipInputStream(FileInputStream(zipFile)).use { zipInputStream ->
+        var entry = zipInputStream.nextEntry
+        while (entry != null) {
+            if (entry.name.endsWith(".xml")) {
+                logger.info("📂 Extraction du fichier XML : ${entry.name}")
+
+                val extractedFile = File.createTempFile("roulez-eco", ".xml")
+                extractedFile.outputStream().use { it.write(zipInputStream.readBytes()) }
+                zipInputStream.closeEntry()
+                return extractedFile
+            }
+            entry = zipInputStream.nextEntry
+        }
+    }
+    return null
+}
+
+// Fonction pour parser le fichier XML
+fun parseXmlStations(xmlFile: File, city: String): Pair<List<FuelStation>, String?> {
+    val stations = mutableListOf<FuelStation>()
+    var lastUpdate: String? = null
+
+    val factory = DocumentBuilderFactory.newInstance()
+    val builder = factory.newDocumentBuilder()
+    val document: Document = builder.parse(xmlFile)
+    document.documentElement.normalize()
+
+    val pdvList = document.getElementsByTagName("pdv")
+
+    for (i in 0 until pdvList.length) {
+        val pdv = pdvList.item(i) as Element
+        val ville = getTagValue("ville", pdv)
+        val cp = pdv.getAttribute("cp") // ✅ Récupération correcte de cp comme un attribut XML
+        val stationName = getTagValue("brand", pdv) ?: "Inconnu"
+        val brand = getTagValue("marque", pdv) ?: "Non spécifié"
+
+        if (ville?.uppercase() == city.uppercase()) {
+
+            val adresse = getTagValue("adresse", pdv)
+            val latitude = pdv.getAttribute("latitude").toDoubleOrNull()?.div(100000)
+            val longitude = pdv.getAttribute("longitude").toDoubleOrNull()?.div(100000)
+
+            val priceMap = mutableMapOf<String, Double?>()
+            val prixList = pdv.getElementsByTagName("prix")
+            for (j in 0 until prixList.length) {
+                val prixNode = prixList.item(j) as Element
+                val carburant = prixNode.getAttribute("nom")
+                val valeur = prixNode.getAttribute("valeur").toDoubleOrNull()
+                if (carburant.isNotEmpty()) {
+                    priceMap[carburant] = valeur
+                }
+            }
+
+            var lastUpdate: String? = null
+            //val prixList = pdv.getElementsByTagName("prix")
+            for (j in 0 until prixList.length) {
+                val prixNode = prixList.item(j) as Element
+                val maj = prixNode.getAttribute("maj") // Récupération de la date
+
+                if (maj.isNotEmpty()) {
+                    lastUpdate = if (lastUpdate == null || maj > lastUpdate) maj else lastUpdate
+                }
+            }
+
+
+            val servicesList = mutableListOf<String>()
+            val servicesNodes = pdv.getElementsByTagName("service")
+            for (j in 0 until servicesNodes.length) {
+                val serviceNode = servicesNodes.item(j) as Element
+                servicesList.add(serviceNode.textContent.trim())
+            }
+
+            stations.add(
+                    FuelStation(
+                            name = stationName,
+                            address = adresse,
+                            cp = cp,
+                            comArmName = ville,
+                            brand = brand,
+                            priceGazole = priceMap["Gazole"],
+                            priceSp95 = priceMap["SP95"],
+                            priceSp98 = priceMap["SP98"],
+                            priceE10 = priceMap["E10"],
+                            priceE85 = priceMap["E85"],
+                            priceGplc = priceMap["GPLc"],
+                            services = if (servicesList.isNotEmpty()) servicesList else null,
+                            geo_point = if (latitude != null && longitude != null) listOf(latitude, longitude) else null,
+                            updateDate = lastUpdate ?: "Non disponible"
+
+                    )
+            )
+        }
+    }
+
+    return Pair(stations, lastUpdate)
+}
+
+// Fonction pour extraire la valeur d'un tag XML
+fun getTagValue(tag: String, element: Element): String? {
+    val nodeList = element.getElementsByTagName(tag)
+    return if (nodeList.length > 0) nodeList.item(0).textContent else null
+}
+
+// Modèle pour la réponse de l’API
+data class ApiResponse(
+        val records: List<Record> // 👈 Correction ici, on récupère `records` et non `results`
+)
+
+
+
+
+
+// 3️⃣ Intégration dans `DrawControllerMap`
+class DrawControllerMap(private val model: DrawMap?, private val modelData: DrawData?) {
     private val mapViewer = JXMapViewer()
-
 
     fun getMapViewer(): JXMapViewer {
         return mapViewer
     }
 
-    fun setup(adresse:String){
-        DrawMap.AdjustMap(mapViewer)
-        var geoDouble = DrawMap.getCoordinatesFromAddress(adresse)
-        geoPosition = DrawMap.centerMap(adresse, mapViewer)
-        DrawMap.Listen_Mouse_click(mapViewer)
-        DrawMap.MapZoom(mapViewer)
+    fun setup(adresse: String?) {
+        if (adresse == null) {
+            logger.info("⚠️ Adresse fournie est nulle, impossible d'afficher la carte.")
+            return
+        }
+
+        model?.let {
+            DrawMap.AdjustMap(mapViewer)
+            geoPosition = DrawMap.centerMap(adresse, mapViewer)
+            DrawMap.Listen_Mouse_click(mapViewer)
+            DrawMap.MapZoom(mapViewer)
+        } ?: logger.info("⚠️ Modèle DrawMap non initialisé.")
     }
 
-
-    fun setupData(){
+    fun setupData() {
         print("Entrez le nom d'une ville : ")
         val city = readLine()?.trim()?.uppercase() ?: "TOULON"
 
         logger.info("🔎 Recherche des stations-service à $city...")
 
-        val (stations, lastUpdate) = modelData.fetchRecentStations(city)
+        val (stations, lastUpdate) = fetchRecentStations(city)
 
         logger.info("📅 Dernière mise à jour : $lastUpdate")
         logger.info("✅ ${stations.size} stations récupérées pour $city")
 
         stations.forEach { station ->
-            println(
-                """
+            logger.info(
+                    """
             🏪 ${station.name}
-            📍 ${station.address}, ${station.com_arm_name}
-            📅 Mise à jour : ${station.update_date ?: "Non disponible"}
-            ⛽ Prix Gazole: ${station.price_gazole}, SP95: ${station.price_sp95}, SP98: ${station.price_sp98}, 
-               E10: ${station.price_e10}, E85: ${station.price_e85}, GPLc: ${station.price_gplc}
+            📍 ${station.address},${station.cp} ${station.comArmName}
+            📅 Mise à jour : ${station.updateDate ?: "Non disponible"}
+            ⛽ Prix Gazole: ${station.priceGazole}, SP95: ${station.priceSp95}, SP98: ${station.priceSp98}, 
+               E10: ${station.priceE10}, E85: ${station.priceE85}, GPLc: ${station.priceGplc}
             🛠 Services: ${station.services?.joinToString(", ") ?: "Non disponible"}
             📌 GPS: (${station.geo_point?.getOrNull(0)}, ${station.geo_point?.getOrNull(1)})
             --------------------------------------
             """.trimIndent()
             )
         }
-
-        //1
-
-        geoPosition =  DrawMap.centerMap("283 Rue Henri Sainte-Claire Deville", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //2
-
-        geoPosition =  DrawMap.centerMap("160 BOULEVARD G.CLEMENCEAU", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //3
-        /*
-        geoPosition =  DrawMap.centerMap("AV INFANTERIE DE MARINE", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //4
-        geoPosition =  DrawMap.centerMap("322 AV.LE BELLEGOU RODE", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //5
-        geoPosition =  DrawMap.centerMap("2338 Avenue Joseph Gasquet", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //6
-        geoPosition =  DrawMap.centerMap("508 AVENUE FOCH", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)
-
-        //7
-        geoPosition =  DrawMap.centerMap("620 Rue David", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)*/
-
-        //8
-        /*
-        geoPosition =  DrawMap.centerMap("95 Boulevard G�n�ral Brosset", mapViewer)
-        DrawMap.addWaypoint(mapViewer, geoPosition)*/
-
-
-        /*stations.forEach{ station ->
-            geoPosition =  DrawMap.centerMap(station.address.toString(), mapViewer)
-            println("test")
-            DrawMap.addWaypoint(mapViewer, geoPosition)
-            println("test2")
-        }*/
     }
-
-
-
 }
+
