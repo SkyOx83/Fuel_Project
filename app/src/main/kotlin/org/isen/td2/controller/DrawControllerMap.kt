@@ -37,8 +37,6 @@ data class FuelStation(
         @SerializedName("price_e85") val priceE85: Double?,
         @SerializedName("price_gplc") val priceGplc: Double?,
         @SerializedName("services") val services: List<String>?,
-        @SerializedName("name") val name: String?,  // 🔥 Correction ici
-        @SerializedName("brand") val brand: String?, // 🛠 Ajout de la marque
         val geo_point: List<Double>?,
 
         )
@@ -51,7 +49,7 @@ data class FuelStation(
 
 // Fonction principale pour récupérer les stations depuis Opendatasoft
 fun fetchRecentStations(city: String): Pair<List<FuelStation>, String?> {
-    val url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/prix-des-carburants-j-1/records?where=com_arm_name=\"${city}\"&rows=2080&sort=update\n"
+    val url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/prix-des-carburants-j-1/records?select=cp%2Caddress%2Ccom_arm_name%2CMAX(update)%2Cservices%2Cprice_gazole%2Cprice_sp95%2Cprice_sp98%2Cprice_e10%2Cprice_e85%2Cprice_gplc&where=com_arm_name%20%3D%20\"$city\""
     val (_, _, result) = url.httpGet().responseObject(FuelStation.Deserializer())
 
     return result.fold(
@@ -71,7 +69,6 @@ fun fetchRecentStations(city: String): Pair<List<FuelStation>, String?> {
 fun fetchBackupStations(city: String): Pair<List<FuelStation>, String?> {
     val backupUrl = "https://donnees.roulez-eco.fr/opendata/jour"
     val (_, _, result) = backupUrl.httpGet().response()
-
     return result.fold(
             success = { responseData ->
                 val tempZipFile = File.createTempFile("roulez-eco", ".zip")
@@ -112,7 +109,7 @@ fun deleteTempFiles(zipFile: File?, xmlFile: File?) {
             logger.info("🗑️ Fichier ZIP supprimé : ${zipFile.absolutePath}")
         }
     } catch (e: Exception) {
-        logger.info("❌ Erreur lors de la suppression des fichiers temporaires : ${e.message}")
+        logger.error("❌ Erreur lors de la suppression des fichiers temporaires : ${e.message}")
     }
 }
 
@@ -192,11 +189,9 @@ fun parseXmlStations(xmlFile: File, city: String): Pair<List<FuelStation>, Strin
 
             stations.add(
                     FuelStation(
-                            name = stationName,
                             address = adresse,
                             cp = cp,
                             comArmName = ville,
-                            brand = brand,
                             priceGazole = priceMap["Gazole"],
                             priceSp95 = priceMap["SP95"],
                             priceSp98 = priceMap["SP98"],
@@ -266,13 +261,12 @@ class DrawControllerMap(private val model: DrawMap?, private val modelData: Draw
         stations.forEach { station ->
             logger.info(
                     """
-            🏪 ${station.name}
             📍 ${station.address},${station.cp} ${station.comArmName}
             📅 Mise à jour : ${station.updateDate ?: "Non disponible"}
-            ⛽ Prix Gazole: ${station.priceGazole}, SP95: ${station.priceSp95}, SP98: ${station.priceSp98}, 
-               E10: ${station.priceE10}, E85: ${station.priceE85}, GPLc: ${station.priceGplc}
+            ⛽ Prix Gazole: ${station.priceGazole?: "Indisponible"}, SP95: ${station.priceSp95?: "Indisponible"}, SP98: ${station.priceSp98?: "Indisponible"}, 
+               E10: ${station.priceE10?: "Indisponible"}, E85: ${station.priceE85?: "Indisponible"}, GPLc: ${station.priceGplc?: "Indisponible"}
             🛠 Services: ${station.services?.joinToString(", ") ?: "Non disponible"}
-            📌 GPS: (${station.geo_point?.getOrNull(0)}, ${station.geo_point?.getOrNull(1)})
+            📌 GPS: ${(station.geo_point?.getOrNull(0))}, ${station.geo_point?.getOrNull(1)})
             --------------------------------------
             """.trimIndent()
             )
