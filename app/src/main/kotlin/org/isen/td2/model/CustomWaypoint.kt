@@ -92,17 +92,7 @@ fun paintWaypoints(g: Graphics, mapViewer: JXMapViewer) {
     }
 }
 
-fun afficherWaypointsStockes(mapViewer: JXMapViewer) {
-    val painter = mapViewer.overlayPainter as? WaypointPainter<CustomWaypoint>
-    val waypoints = painter?.waypoints
 
-    if (waypoints.isNullOrEmpty()) {
-        println("✅ Aucun waypoint stocké.")
-    } else {
-        println("❌ Attention ! Waypoints toujours stockés :")
-        waypoints.forEach { println("➡ ${it.position.latitude}, ${it.position.longitude}") }
-    }
-}
 
 
 

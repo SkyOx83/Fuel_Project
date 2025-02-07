@@ -2,7 +2,6 @@ package org.isen.td2.view.impl
 
 import org.apache.logging.log4j.kotlin.logger
 import org.isen.td2.controller.DrawControllerMap
-import org.isen.td2.model.afficherWaypointsStockes
 
 import org.isen.td2.model.clearWaypoints
 import org.isen.td2.model.updateWaypointPainter
@@ -40,7 +39,7 @@ object Carburant {
     )
 }
 
-class ShapeView(val ctrl: DrawControllerMap) : IFuelView, JFrame("Shape View"), ActionListener {
+class ShapeView(val ctrl: DrawControllerMap) : IFuelView, JFrame("Gazogo"), ActionListener {
     private val checkBoxes = mutableMapOf<String, JCheckBox>()
 
 
@@ -123,7 +122,6 @@ class ShapeView(val ctrl: DrawControllerMap) : IFuelView, JFrame("Shape View"), 
                 if (e.keyCode == KeyEvent.VK_ENTER) {
                     clearWaypoints(mapViewer)
                     mapViewer.overlayPainter = null
-                    afficherWaypointsStockes(mapViewer)
                     val searchText = searchField.text
                     if (searchText != "") {
                         logger.info("Recherche: $searchText")

@@ -19218,3 +19218,167 @@
 2025-02-07 08:01:24,665 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Zoom : 4
 2025-02-07 08:01:24,665 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Zoom : 3
 2025-02-07 08:01:24,666 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Zoom : 2
+2025-02-07 08:04:00,861 INFO o.i.t.m.DrawMap$Companion [main] Coordonnees de PARIS
+2025-02-07 08:04:06,470 INFO o.i.t.v.i.ShapeView [AWT-EventQueue-0] Recherche: toulon
+2025-02-07 08:04:06,526 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de toulon
+2025-02-07 08:04:06,534 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 08:04:06,804 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 08:04:07,930 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 08:04:08,834 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco4232056942147159413.xml
+2025-02-07 08:04:08,835 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco7590306659909666367.zip
+2025-02-07 08:04:08,835 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 08:04:08,838 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 08:04:08,853 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 283 Rue Henri Sainte-Claire Deville,83100 TOULON
+📅 Mise à jour : 2025-02-06T09:46:35
+⛽ Prix Gazole: 1.682, SP95: 1.812, SP98: 1.859, 
+   E10: 1.748, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Station de gonflage, Piste poids lourds, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12753, 5.97764)
+--------------------------------------
+2025-02-07 08:04:08,896 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 283 Rue Henri Sainte-Claire Deville, 83100 TOULON
+2025-02-07 08:04:08,911 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:08,914 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 160 BOULEVARD G.CLEMENCEAU,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.779, SP95: Indisponible, SP98: 1.949, 
+   E10: 1.839, E85: 0.786, GPLc: 1.019
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Piste poids lourds, Lavage automatique, Lavage manuel, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.12367, 5.93697)
+--------------------------------------
+2025-02-07 08:04:08,923 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 160 BOULEVARD G.CLEMENCEAU, 83000 TOULON
+2025-02-07 08:04:08,926 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:08,927 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 AV INFANTERIE DE MARINE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage automatique, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.11313, 5.93462)
+--------------------------------------
+2025-02-07 08:04:08,947 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de AV INFANTERIE DE MARINE, 83000 TOULON
+2025-02-07 08:04:08,951 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:08,954 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 322 AV.LE BELLEGOU RODE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: 0.779, GPLc: 0.999
+🛠 Services: Toilettes publiques, Boutique alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Lavage automatique, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.1177114581, 5.94101238436)
+--------------------------------------
+2025-02-07 08:04:08,971 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 322 AV.LE BELLEGOU RODE, 83000 TOULON
+2025-02-07 08:04:08,976 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:08,977 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 2338 Avenue Joseph Gasquet,83100 TOULON
+📅 Mise à jour : 2025-02-06T05:30:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Vente de fioul domestique, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.11874, 5.9794)
+--------------------------------------
+2025-02-07 08:04:08,990 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 2338 Avenue Joseph Gasquet, 83100 TOULON
+2025-02-07 08:04:08,993 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:08,994 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 508 AVENUE FOCH,83100 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.769, SP95: Indisponible, SP98: 1.946, 
+   E10: 1.836, E85: 0.786, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Wifi, Automate CB 24/24, DAB (Distributeur automatique de billets)
+📌 GPS: 43.128, 5.919)
+--------------------------------------
+2025-02-07 08:04:09,037 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 508 AVENUE FOCH, 83100 TOULON
+2025-02-07 08:04:09,043 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:09,045 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 620 Rue David,83200 Toulon
+📅 Mise à jour : 2025-02-06T20:45:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.13945251, 5.88654834)
+--------------------------------------
+2025-02-07 08:04:09,063 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 620 Rue David, 83200 Toulon
+2025-02-07 08:04:09,068 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:09,068 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 95 Boulevard Général Brosset,83200 TOULON
+📅 Mise à jour : 2024-10-15T21:03:47
+⛽ Prix Gazole: 1.729, SP95: 1.869, SP98: 1.969, 
+   E10: Indisponible, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Restauration sur place, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12814, 5.90563)
+--------------------------------------
+2025-02-07 08:04:09,079 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 95 Boulevard Général Brosset, 83200 TOULON
+2025-02-07 08:04:09,082 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:17,139 INFO o.i.t.v.i.ShapeView$makeGui$2 [AWT-EventQueue-0] Recherche: toulon
+2025-02-07 08:04:17,237 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de toulon
+2025-02-07 08:04:17,255 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 08:04:17,448 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 08:04:18,587 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 08:04:19,028 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco15432389445321543759.xml
+2025-02-07 08:04:19,029 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco14287343199869951391.zip
+2025-02-07 08:04:19,029 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 08:04:19,030 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 08:04:19,030 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 283 Rue Henri Sainte-Claire Deville,83100 TOULON
+📅 Mise à jour : 2025-02-06T09:46:35
+⛽ Prix Gazole: 1.682, SP95: 1.812, SP98: 1.859, 
+   E10: 1.748, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Station de gonflage, Piste poids lourds, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12753, 5.97764)
+--------------------------------------
+2025-02-07 08:04:19,053 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 283 Rue Henri Sainte-Claire Deville, 83100 TOULON
+2025-02-07 08:04:19,057 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,057 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 160 BOULEVARD G.CLEMENCEAU,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.779, SP95: Indisponible, SP98: 1.949, 
+   E10: 1.839, E85: 0.786, GPLc: 1.019
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Piste poids lourds, Lavage automatique, Lavage manuel, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.12367, 5.93697)
+--------------------------------------
+2025-02-07 08:04:19,099 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 160 BOULEVARD G.CLEMENCEAU, 83000 TOULON
+2025-02-07 08:04:19,103 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,104 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 AV INFANTERIE DE MARINE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage automatique, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.11313, 5.93462)
+--------------------------------------
+2025-02-07 08:04:19,128 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de AV INFANTERIE DE MARINE, 83000 TOULON
+2025-02-07 08:04:19,136 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,138 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 322 AV.LE BELLEGOU RODE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: 0.779, GPLc: 0.999
+🛠 Services: Toilettes publiques, Boutique alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Lavage automatique, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.1177114581, 5.94101238436)
+--------------------------------------
+2025-02-07 08:04:19,162 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 322 AV.LE BELLEGOU RODE, 83000 TOULON
+2025-02-07 08:04:19,169 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,170 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 2338 Avenue Joseph Gasquet,83100 TOULON
+📅 Mise à jour : 2025-02-06T05:30:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Vente de fioul domestique, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.11874, 5.9794)
+--------------------------------------
+2025-02-07 08:04:19,186 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 2338 Avenue Joseph Gasquet, 83100 TOULON
+2025-02-07 08:04:19,191 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,191 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 508 AVENUE FOCH,83100 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.769, SP95: Indisponible, SP98: 1.946, 
+   E10: 1.836, E85: 0.786, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Wifi, Automate CB 24/24, DAB (Distributeur automatique de billets)
+📌 GPS: 43.128, 5.919)
+--------------------------------------
+2025-02-07 08:04:19,258 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 508 AVENUE FOCH, 83100 TOULON
+2025-02-07 08:04:19,267 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,268 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 620 Rue David,83200 Toulon
+📅 Mise à jour : 2025-02-06T20:45:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.13945251, 5.88654834)
+--------------------------------------
+2025-02-07 08:04:19,347 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 620 Rue David, 83200 Toulon
+2025-02-07 08:04:19,359 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:19,360 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 95 Boulevard Général Brosset,83200 TOULON
+📅 Mise à jour : 2024-10-15T21:03:47
+⛽ Prix Gazole: 1.729, SP95: 1.869, SP98: 1.969, 
+   E10: Indisponible, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Restauration sur place, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12814, 5.90563)
+--------------------------------------
+2025-02-07 08:04:19,380 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 95 Boulevard Général Brosset, 83200 TOULON
+2025-02-07 08:04:19,384 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 08:04:45,800 INFO o.i.t.m.DrawMap$Companion [main] Coordonnees de PARIS
