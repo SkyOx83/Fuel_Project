@@ -195,11 +195,34 @@ class DrawMap {
             updateWaypointPainter(mapViewer, waypointSet)
             logger.info("enter in custom waypoint")
         }
+        fun clearWaypoints(mapViewer: JXMapViewer) {
+
+            // 1️⃣ Supprimer les waypoints stockés dans la liste
+            waypointsList.clear()
+
+            // 2️⃣ Supprimer tous les waypoints de la carte
+            val painter = WaypointPainter<CustomWaypoint>()
+            painter.setWaypoints(emptySet())  // ✅ Supprime les marqueurs visibles
+            mapViewer.overlayPainter = painter
+
+            // 3️⃣ Désactiver temporairement l'affichage des overlays
+            mapViewer.setOverlayPainter(null)
+            mapViewer.setOverlayPainter(painter)
+
+            // 4️⃣ Forcer une mise à jour complète de l'affichage
+            mapViewer.revalidate()
+            mapViewer.repaint()
+            mapViewer.updateUI()
+
+
+
+
+        }
         // Fonction pour récupérer tous les waypoints
         fun getAllWaypoints(): List<CustomWaypoint> = waypoints
 
         // Met à jour le WaypointPainter qui gère les affichages des waypoints
-        private fun updateWaypointPainter(mapViewer: JXMapViewer, waypointset: MutableSet<Waypoint>) {
+        public fun updateWaypointPainter(mapViewer: JXMapViewer, waypointset: MutableSet<Waypoint>) {
             val waypointPainter = WaypointPainter<Waypoint>()
             waypointPainter.setWaypoints(waypointset)
             mapViewer.overlayPainter = waypointPainter // Ajoute le WaypointPainter aux overlays

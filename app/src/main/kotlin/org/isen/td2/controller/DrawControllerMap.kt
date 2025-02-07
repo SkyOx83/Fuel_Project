@@ -10,6 +10,7 @@ import com.github.kittinunf.fuel.core.ResponseDeserializable
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 import org.isen.td2.data.Shape
+import org.isen.td2.model.CustomWaypoint
 import org.isen.td2.view.IFuelView
 import org.isen.td2.view.impl.Carburant
 import org.isen.td2.view.impl.tab
@@ -252,10 +253,12 @@ class DrawControllerMap(private val model: DrawMap) {
     }
 
     fun setupData(adresse: String) {
+
         //print("Entrez le nom d'une ville : ")
         //val city = readLine()?.trim()?.uppercase() ?: "TOULON"
         val city = adresse
-
+        DrawMap.clearWaypoints(mapViewer)
+        mapViewer.overlayPainter = null// Ajoute le WaypointPainter aux overlays
         logger.info("🔎 Recherche des stations-service à $city...")
 
         val (stations, lastUpdate) = fetchRecentStations(city)

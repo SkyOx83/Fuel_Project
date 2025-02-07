@@ -2,7 +2,11 @@ package org.isen.td2.view.impl
 
 import org.apache.logging.log4j.kotlin.logger
 import org.isen.td2.controller.DrawControllerMap
+import org.isen.td2.model.afficherWaypointsStockes
+
 import org.isen.td2.model.clearWaypoints
+import org.isen.td2.model.updateWaypointPainter
+import org.isen.td2.model.waypointsList
 import org.isen.td2.view.IFuelView
 import org.jxmapviewer.JXMapViewer
 import java.awt.*
@@ -117,6 +121,9 @@ class ShapeView(val ctrl: DrawControllerMap) : IFuelView, JFrame("Shape View"), 
         searchField.addKeyListener(object : KeyAdapter() {
             override fun keyPressed(e: KeyEvent) {
                 if (e.keyCode == KeyEvent.VK_ENTER) {
+                    clearWaypoints(mapViewer)
+                    mapViewer.overlayPainter = null
+                    afficherWaypointsStockes(mapViewer)
                     val searchText = searchField.text
                     if (searchText != "") {
                         logger.info("Recherche: $searchText")

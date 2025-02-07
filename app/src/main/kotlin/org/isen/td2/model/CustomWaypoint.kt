@@ -4,6 +4,7 @@ package org.isen.td2.model
 import org.jxmapviewer.JXMapViewer
 import org.jxmapviewer.viewer.GeoPosition
 import org.jxmapviewer.viewer.Waypoint
+import org.jxmapviewer.viewer.WaypointPainter
 import javax.swing.ImageIcon
 import java.awt.Graphics
 import java.awt.Color
@@ -36,11 +37,53 @@ fun addWaypoint(mapViewer: JXMapViewer, position: GeoPosition) {
     mapViewer.repaint() // Rafraîchir la carte pour afficher le waypoint
 }
 
-// Fonction pour effacer tous les waypoints
 fun clearWaypoints(mapViewer: JXMapViewer) {
-    waypointsList.clear() // Vider la liste des waypoints
-    mapViewer.repaint() // Rafraîchir la carte pour effacer tous les waypoints
+
+
+    // 1️⃣ Supprimer les waypoints stockés dans la liste
+    waypointsList.clear()
+
+    // 2️⃣ Supprimer tous les waypoints de la carte
+    val painter = WaypointPainter<CustomWaypoint>()
+    painter.setWaypoints(emptySet())  // ✅ Supprime les marqueurs visibles
+    mapViewer.overlayPainter = painter
+
+    // 3️⃣ Désactiver temporairement l'affichage des overlays
+    mapViewer.setOverlayPainter(null)
+    mapViewer.setOverlayPainter(painter)
+
+    // 4️⃣ Forcer une mise à jour complète de l'affichage
+    mapViewer.revalidate()
+    mapViewer.repaint()
+    mapViewer.updateUI()
+
+
 }
+fun updateWaypointPainter(mapViewer: JXMapViewer, waypointsList: MutableList<CustomWaypoint>) {
+    println("🔄 Mise à jour des waypoints...")
+
+    // ✅ Vérifier si la liste est vide
+    if (waypointsList.isEmpty()) {
+        println("🗑️ Aucun waypoint à afficher, suppression des overlays.")
+        mapViewer.setOverlayPainter(null) // Supprime tous les waypoints
+    } else {
+        // 🎨 Création d'un nouveau WaypointPainter avec les waypoints
+        val waypointPainter = WaypointPainter<CustomWaypoint>()
+        waypointPainter.setWaypoints(waypointsList.toSet()) // ✅ Convertir la liste en Set
+        mapViewer.overlayPainter = waypointPainter // ✅ Appliquer le WaypointPainter
+    }
+
+    // 🔄 Forcer la mise à jour graphique
+    mapViewer.revalidate()
+    mapViewer.repaint()
+    mapViewer.updateUI() // 🔥 Swing refresh total
+
+    println("✅ Waypoints mis à jour : ${waypointsList.size} waypoints affichés.")
+}
+
+
+
+
 
 // Méthode pour afficher tous les waypoints
 fun paintWaypoints(g: Graphics, mapViewer: JXMapViewer) {
@@ -48,6 +91,20 @@ fun paintWaypoints(g: Graphics, mapViewer: JXMapViewer) {
         waypoint.paintWaypoint(g, mapViewer) // Dessiner chaque waypoint sur la carte
     }
 }
+
+fun afficherWaypointsStockes(mapViewer: JXMapViewer) {
+    val painter = mapViewer.overlayPainter as? WaypointPainter<CustomWaypoint>
+    val waypoints = painter?.waypoints
+
+    if (waypoints.isNullOrEmpty()) {
+        println("✅ Aucun waypoint stocké.")
+    } else {
+        println("❌ Attention ! Waypoints toujours stockés :")
+        waypoints.forEach { println("➡ ${it.position.latitude}, ${it.position.longitude}") }
+    }
+}
+
+
 
 
 
