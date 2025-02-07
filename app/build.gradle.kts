@@ -41,6 +41,10 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-coroutines:2.3.1")
     implementation("com.github.kittinunf.fuel:fuel-gson:2.3.1")
 
+    implementation("org.apache.logging.log4j:log4j-api:2.24.3")
+    implementation("org.apache.logging.log4j:log4j-core:2.24.3")
+    implementation("org.apache.logging.log4j:log4j-api-kotlin:1.5.0")
+
     implementation("com.google.code.gson:gson:2.11.0")
 
     // This dependency is used by the application.
