@@ -287,12 +287,12 @@ class DrawControllerMap(private val model: DrawMap) {
     }
     fun verifConditionStationCarburant(station: FuelStation, checkState: MutableList<Pair<String, Int>>): Boolean {
         if (checkState[3].second == 1 ) {return true}
-        if (checkState[4].second == 1 ){if (checkState[4].first != "Gazole" || station.priceGazole == null) {return false}}
-        if (checkState[5].second == 1 ){if (checkState[5].first != "SP 98" || station.priceSp98 == null) {return false}}
-        if (checkState[6].second == 1 ){if (checkState[6].first != "SP 95" || station.priceSp95 == null) {return false}}
-        if (checkState[7].second == 1 ){if (checkState[7].first != "E 10" || station.priceE10 == null) {return false}}
-        if (checkState[8].second == 1 ){if (checkState[8].first != "E 85" || station.priceE85 == null) {return false}}
-        if (checkState[9].second == 1 ){if (checkState[8].first != "GPLc" || station.priceGplc == null ) {return false}}
+        if (checkState[4].second == 1 ){if (station.priceGazole == null ||checkState[4].first != "Gazole" ) {return false}}
+        if (checkState[5].second == 1 ){if (station.priceSp98 == null || checkState[5].first != "SP 98" ) {return false}}
+        if (checkState[6].second == 1 ){if (station.priceSp95 == null || checkState[6].first != "SP 95"  ) {return false}}
+        if (checkState[7].second == 1 ){if (station.priceE10 == null || checkState[7].first != "E 10") {return false}}
+        if (checkState[8].second == 1 ){if (station.priceE85 == null || checkState[8].first != "E 85") {return false}}
+        if (checkState[9].second == 1 ){if ( station.priceGplc == null || station.priceGplc <= 0.0) {return false}}
         return true
     } //checkState[9].first != "GPLc" ||
 
