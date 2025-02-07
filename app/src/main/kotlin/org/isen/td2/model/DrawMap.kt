@@ -6,6 +6,7 @@ import org.isen.td2.NominatimResponse
 import java.net.HttpURLConnection
 import java.net.URL
 import kotlinx.serialization.Serializable
+import org.isen.td2.data.Shape
 import org.isen.td2.map.CustomWaypoint
 
 import org.jxmapviewer.JXMapViewer
@@ -13,12 +14,16 @@ import org.jxmapviewer.viewer.DefaultTileFactory
 import org.jxmapviewer.viewer.GeoPosition
 import org.jxmapviewer.viewer.TileFactoryInfo
 import org.jxmapviewer.viewer.WaypointPainter
+import org.jxmapviewer.viewer.Waypoint
 import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.Point
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import java.awt.event.MouseWheelEvent
+import java.beans.PropertyChangeListener
+import java.beans.PropertyChangeSupport
+import kotlin.properties.Delegates
 import kotlin.system.exitProcess
 
 @Serializable
@@ -35,18 +40,23 @@ class DrawMap {
 
     val minZoom: Int = 2
     val maxZoom:Int = 17
+
+
     // pour éviter d'écrire une grosse ligne 44
-    companion object {
+    /*
         private val json = Json {
             ignoreUnknownKeys = true // IMPORTANT pour éviter les erreurs
         }
+
 
         // Fonction pour récupérer les coordonnées via l'API Nominatim
         public fun getCoordinatesFromAddress(address: String): Pair<Double, Double>? {
             try {
                 // Encodage de l'adresse dans l'URL
                 val formattedAddress = address.replace(" ", "+")
-                val url = URL("https://nominatim.openstreetmap.org/search?q=$formattedAddress&format=json")
+                //val url = URL("https://nominatim.openstreetmap.org/search?q=$formattedAddress&format=json")
+                val url = URL("https://nominatim.openstreetmap.org/search?q=$formattedAddress&format=json&addressdetails=1&limit=1")
+
 
                 // Ouvrir la connexion HTTP
                 val connection = url.openConnection() as HttpURLConnection
@@ -73,6 +83,60 @@ class DrawMap {
             }
             return null
         }
+        */
+    @Serializable
+    data class MapboxGeocodingResponse(
+        val features: List<Feature>
+    )
+
+    @Serializable
+    data class Feature(
+        val geometry: Geometry
+    )
+
+    @Serializable
+    data class Geometry(
+        val coordinates: List<Double>
+    )
+        object MapboxGeocoding {
+        private const val API_KEY = "pk.eyJ1IjoiZGpwb3VscGUiLCJhIjoiY202dGpnMWl1MDNkMzJqcjBrdXBmYmNyZCJ9.2jL5TCjYHtnb5x08gcDKrQ" // Key MapBox
+
+            private val json = Json { ignoreUnknownKeys = true } // to have less big block of code
+
+            // Fonction pour récupérer les coordonnées via l'API Mapbox Geocoding
+        public fun getCoordinatesFromAddress(address: String): Pair<Double, Double>? {
+            try {
+                // Encodage de l'adresse dans l'URL
+                val formattedAddress = address.replace(" ", "+")
+                val url = URL("https://api.mapbox.com/geocoding/v5/mapbox.places/$formattedAddress.json?access_token=$API_KEY")
+
+                // Ouvrir la connexion HTTP
+                val connection = url.openConnection() as HttpURLConnection
+                connection.requestMethod = "GET"
+                connection.setRequestProperty("User-Agent", "Mozilla/5.0")
+
+                // Lire la réponse JSON
+                val response = connection.inputStream.bufferedReader().use { it.readText() }
+
+                // Désérialiser la réponse JSON avec kotlinx.serialization
+                val jsonResponse = json.decodeFromString<MapboxGeocodingResponse>(response)
+
+
+                // Vérifier si on a des résultats et retourner les coordonnées
+                if (jsonResponse.features.isNotEmpty()) {
+                    val lon = jsonResponse.features[0].geometry.coordinates[0]
+                    val lat = jsonResponse.features[0].geometry.coordinates[1]
+                    return Pair(lat, lon)
+                } else {
+                    println("Erreur de géocodage : Aucune correspondance trouvée")
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+            return null
+        }
+        }
+    companion object {
         fun AdjustMap(mapViewer: JXMapViewer){
             val minZoom: Int = 2
             val maxZoom:Int = 17
@@ -94,11 +158,11 @@ class DrawMap {
         }
 
         fun centerMap(adresse: String, mapViewer: JXMapViewer):GeoPosition {
-            val coordinates = DrawMap.getCoordinatesFromAddress(adresse)
+            val coordinates = MapboxGeocoding.getCoordinatesFromAddress(adresse)
 
             if (coordinates != null) {
                 val (latitude, longitude) = coordinates
-                println("Coordonnées de $adresse : lat=$latitude, lon=$longitude")
+                println("Coordonnees de $adresse")
 
                 // Centrer la carte sur la position trouvée
                 geoPosition = GeoPosition(latitude, longitude)
@@ -160,8 +224,9 @@ class DrawMap {
                 }
             }
         }
-
+        private val waypoints = mutableListOf<CustomWaypoint>()
         fun addWaypoint(mapViewer: JXMapViewer, position: GeoPosition) {
+            /*
             val waypoints = setOf(CustomWaypoint(position))
 
             val painter = object : WaypointPainter<CustomWaypoint>() {
@@ -174,8 +239,48 @@ class DrawMap {
                 }
             }
             painter.setWaypoints(waypoints)
-            mapViewer.overlayPainter = painter
+            mapViewer.overlayPainter = painter*/
+
+            val waypoint = CustomWaypoint(geoPosition)
+            waypoints.add(waypoint)
+
+            // Convertir la liste de CustomWaypoint en MutableSet<Waypoint>
+            val waypointSet: MutableSet<Waypoint> = waypoints.toMutableSet()
+
+            updateWaypointPainter(mapViewer, waypointSet)
+            println("enter in custom waypoint")
         }
+        // Fonction pour récupérer tous les waypoints
+        fun getAllWaypoints(): List<CustomWaypoint> = waypoints
+
+        // Met à jour le WaypointPainter qui gère les affichages des waypoints
+        private fun updateWaypointPainter(mapViewer: JXMapViewer, waypointset: MutableSet<Waypoint>) {
+            val waypointPainter = WaypointPainter<Waypoint>()
+            waypointPainter.setWaypoints(waypointset)
+            mapViewer.overlayPainter = waypointPainter // Ajoute le WaypointPainter aux overlays
+        }
+    }
+
+    private val pcs = PropertyChangeSupport(this)
+    private val shapes = mutableListOf<Shape>()
+
+
+    private var dummy:Int by Delegates.observable(0) { property, oldValue, newValue ->
+        pcs.firePropertyChange(property.name, oldValue, newValue)
+    }
+
+    fun update(nb:Int) {
+        dummy = nb
+    }
+
+    fun addShape(shape: Shape){
+        shapes.add(shape)
+        // Ici le null va forcer l'envoi du tableau sinon rien ne va se déclencher
+        pcs.firePropertyChange("shapes", null, shapes)
+    }
+
+    fun addObserver(l: PropertyChangeListener){
+        pcs.addPropertyChangeListener(l)
     }
 }
 

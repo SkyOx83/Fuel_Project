@@ -3,7 +3,7 @@ package org.isen.td2
 import org.isen.td2.controller.DrawController
 import org.isen.td2.model.DrawModel
 import org.isen.td2.view.impl.DrawTestView
-import org.isen.td2.view.impl.ShapeView
+
 
 import org.jxmapviewer.JXMapViewer
 import org.jxmapviewer.viewer.DefaultTileFactory
@@ -14,10 +14,12 @@ import java.net.URL
 import javax.swing.JFrame
 import kotlinx.serialization.*
 import kotlinx.serialization.json.*
+
 import org.isen.td2.controller.DrawControllerMap
 import org.isen.td2.map.CustomWaypoint
 import org.isen.td2.map.Address
-import org.isen.td2.model.DrawData
+import org.isen.td2.view.impl.ShapeView
+
 import org.isen.td2.model.DrawMap
 import org.isen.td2.view.impl.ShapeMap
 import java.io.File
@@ -41,14 +43,17 @@ data class NominatimResponse(
 //lateinit var geoPosition: GeoPosition
 
 fun main() {
-    val modelData = DrawData()
-    val model = DrawMap()
-    val controller = DrawControllerMap(model, modelData)
-    controller.setupData()
-    controller.setup("283 Rue Henri Sainte-Claire Deville")
-    val shapemap = ShapeMap()
 
-    shapemap.display(controller.getMapViewer())
+    val model = DrawMap()
+    val controller = DrawControllerMap(model)
+    //controller.setupData("TOULON") // maintenant dans ShapeView
+    controller.setup("PARIS") // maintenant dans ShapeView
+    //val shapemap = ShapeView(controller)
+
+    //shapemap.display(controller.getMapViewer())
+    val shapeView = ShapeView(controller)
+
+    controller.displayAll()
 
 
     /*
@@ -56,7 +61,7 @@ fun main() {
     val controller = DrawController(model)
 
     val testGui = DrawTestView(controller)
-    val shapeView = ShapeView(controller)
+    val shapeView = org.isen.td2.view.impl.ShapeView(controller)
 
     controller.displayAll()*/
 

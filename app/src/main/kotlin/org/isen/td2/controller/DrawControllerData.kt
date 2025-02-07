@@ -58,7 +58,7 @@ class DrawControllerData(private val modelData: DrawData) {
             🏪 ${station.name}
             📍 ${station.address}, ${station.com_arm_name}
             📅 Mise à jour : ${station.update_date ?: "Non disponible"}
-            ⛽ Prix Gazole: ${station.price_gazole}, SP95: ${station.price_sp95}, SP98: ${station.price_sp98}, 
+            ⛽ Prix Gazole: ${station.price_gazole}, SP95: ${station.price_sp95}, SP98: ${station.price_sp98},
                E10: ${station.price_e10}, E85: ${station.price_e85}, GPLc: ${station.price_gplc}
             🛠 Services: ${station.services?.joinToString(", ") ?: "Non disponible"}
             📌 GPS: (${station.geo_point?.getOrNull(0)}, ${station.geo_point?.getOrNull(1)})

@@ -2,18 +2,18 @@ package org.isen.td2.controller
 
 import org.isen.td2.data.Shape
 import org.isen.td2.model.DrawModel
-import org.isen.td2.view.IDrawView
+import org.isen.td2.view.IFuelView
 
 class DrawController(private val model:DrawModel) {
-    private val views = mutableListOf<IDrawView>()
+    private val views = mutableListOf<IFuelView>()
 
     fun displayAll(){
-        views.forEach{i:IDrawView ->
+        views.forEach{i:IFuelView ->
             i.display()
         }
     }
 
-    fun registerView(view:IDrawView){
+    fun registerView(view:IFuelView){
         model.addObserver(view)
         views.add(view)
     }

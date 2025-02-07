@@ -1,4 +1,4 @@
-package org.isen.td2.model
+/*package org.isen.td2.model
 
 
 import com.github.kittinunf.fuel.httpGet
@@ -176,4 +176,4 @@ class DrawData {
     }
 
 }
-
+*/

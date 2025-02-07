@@ -12,7 +12,7 @@ init {
 
 
 }
-    public fun display(mapViewer: JXMapViewer){
+    public fun displayMap(mapViewer: JXMapViewer){
         val frame = JFrame("Fill & Rest")
         frame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
         frame.setSize(800, 600)
@@ -27,7 +27,7 @@ init {
             println("⚠️ Icône introuvable : $iconPath")
         }
 
-        //val mapViewer = JXMapViewer() // à changer !!
+
         frame.add(mapViewer)
         frame.isVisible = true
     }

@@ -1,125 +1,265 @@
 package org.isen.td2.view.impl
 
-import org.isen.td2.controller.DrawController
-import org.isen.td2.data.Dot
-import org.isen.td2.data.Shape
-import org.isen.td2.data.impl.Carre
-import org.isen.td2.data.impl.Rectangle
-import org.isen.td2.view.IDrawView
-import org.isen.td2.widget.Dessin
+import org.isen.td2.controller.DrawControllerMap
+import org.isen.td2.view.IFuelView
 import org.jxmapviewer.JXMapViewer
 import org.jxmapviewer.viewer.DefaultTileFactory
 import org.jxmapviewer.viewer.TileFactoryInfo
 import java.awt.*
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
+import java.awt.event.KeyAdapter
+import java.awt.event.KeyEvent
 import java.beans.PropertyChangeEvent
-import javax.swing.JButton
-import javax.swing.JFrame
-import javax.swing.JLabel
-import javax.swing.JPanel
-import javax.swing.JTextArea
-import javax.swing.JTextField
-import javax.swing.WindowConstants
-import javax.swing.border.Border
 
-class ShapeView(val ctrl: DrawController): IDrawView, JFrame("Shape View"), ActionListener {
-    private var xTxt = JTextField(10)
-    private var yTxt = JTextField(10)
-    //private val dessin = Dessin()
+import javax.imageio.ImageIO
+import java.io.File
+import javax.swing.*
 
-    private val dessin: Dessin
+class ShapeView(val ctrl: DrawControllerMap) : IFuelView, JFrame("Shape View"), ActionListener {
+    private val checkBoxes = mutableMapOf<String, JCheckBox>()
+    private val checkBoxesImpl = mutableListOf(
+        Pair("Boutique alimentaire", 0),
+        Pair("Station de gonflage", 0),
+        Pair("Toilettes", 0)
+    )
+    private val checkStates = mutableListOf(
+        Pair("Boutique alimentaire", 0),
+        Pair("Station de gonflage", 0),
+        Pair("Toilettes", 0),
+        Pair("Tous les types", 1),
+        Pair("Gazole", 0),
+        Pair("SP 98", 0),
+        Pair("SP 95", 0),
+        Pair("E 10", 0),
+        Pair("E 85", 0),
+        Pair("GPLc", 0)
+    )
 
-    init{
+    private val shapeComboBox = JComboBox(arrayOf("Tous les types", "Gazole", "SP 98", "SP 95", "E 10", "E 85", "GPLc"))
+    private val searchField = JTextField(20)
+    private val searchButton = JButton("Rechercher")
+
+    private val itinerairePanel = JPanel()
+    private val itineraireSearchField1 = JTextField(20)
+    private val itineraireSearchField2 = JTextField(20)
+    private val itineraireSearchButton = JButton("Rechercher")
+
+    private val searchPanel = JPanel()
+    private val mainPanel = JPanel(GridBagLayout())
+
+    // Nouveau : MapViewer
+    private val mapViewer: JXMapViewer = ctrl.getMapViewer()
+
+    init {
         ctrl.registerView(this)
         preferredSize = Dimension(800, 600)
-
-        //Cette ligne est super importante sinon on va avoir plusieurs fois la même opération
         defaultCloseOperation = WindowConstants.EXIT_ON_CLOSE
 
+        // Configuration de la carte
+        //setupMapViewer()
 
         contentPane = JPanel().apply {
-            //Le this n'est plus obligatoire à mettre
-            this.layout = BorderLayout()
-        }
-        val txt = JTextArea()
-        dessin = Dessin()
-        contentPane.add(dessin, BorderLayout.CENTER)
-        contentPane.add(makeGui(), BorderLayout.SOUTH)
-        /*
-        val mapViewer = JXMapViewer()
-
-        val maxZoom:Int = 17
-
-        // Utilisation de TileFactoryInfo si OSMTileFactoryInfo ne fonctionne pas
-        val tileFactoryInfo = object : TileFactoryInfo(
-            "OpenStreetMap",
-            1, maxZoom, maxZoom, 256, true, true,
-            "https://tile.openstreetmap.org", "x", "y", "z"
-        ) {
-            override fun getTileUrl(x: Int, y: Int, zoom: Int): String {
-                val adjustedZoom = maxZoom - zoom // Ajuster le zoom pour correspondre aux niveaux valides
-                return "https://tile.openstreetmap.org/$adjustedZoom/$x/$y.png"
-            }
+            layout = BorderLayout()
         }
 
-        val tileFactory = DefaultTileFactory(tileFactoryInfo)
-        mapViewer.tileFactory = tileFactory
+        contentPane.add(mapViewer, BorderLayout.CENTER) // Remplace Dessin par JXMapViewer
+        contentPane.add(makeGui(), BorderLayout.WEST)
 
-        // Centrer la carte sur une position spécifique
-        mapViewer.addressLocation = org.jxmapviewer.viewer.GeoPosition(48.8566, 2.3522) // Paris
-        mapViewer.zoom = 4 // Zoom initial
-
-        contentPane.add(mapViewer, BorderLayout.CENTER )
-        */
-        isVisible = false
-        //C'est fait pour réduire les composants à leur taille préférée, il vaut mieux le mettre pour être sûr de respecter ce qui est demandé
+        setWindowIcon()
+        isVisible = true
         pack()
     }
 
-    /*
-    private fun makeGui(): JPanel{
-        return JPanel().apply {
-            layout = BorderLayout
+    private fun makeGui(): JPanel {
+        val constraints = GridBagConstraints()
+        constraints.insets = Insets(5, 5, 5, 5)
+        constraints.fill = GridBagConstraints.HORIZONTAL
+        constraints.anchor = GridBagConstraints.NORTH
+
+        val topPanel = JPanel(GridLayout(1, 2, 5, 0))
+        val villeButton = JButton("Ville").apply {
+            addActionListener(this@ShapeView)
+            actionCommand = "ville"
+        }
+        val itineraireButton = JButton("Itinéraire").apply {
+            addActionListener(this@ShapeView)
+            actionCommand = "itineraire"
+        }
+        topPanel.add(villeButton)
+        topPanel.add(itineraireButton)
+
+        constraints.gridx = 0
+        constraints.gridy = 0
+        mainPanel.add(topPanel, constraints)
+
+        searchPanel.layout = FlowLayout()
+        searchPanel.add(searchField)
+        searchPanel.add(searchButton)
+        constraints.gridy = 1
+        mainPanel.add(searchPanel, constraints)
+
+        searchButton.addActionListener {
+            val searchText = searchField.text
+            println("Recherche: $searchText")
+            ctrl.setup(searchText)
+            ctrl.setupData(searchText)
+        }
+
+        searchField.addKeyListener(object : KeyAdapter() {
+            override fun keyPressed(e: KeyEvent) {
+                if (e.keyCode == KeyEvent.VK_ENTER) {
+                    val searchText = searchField.text
+                    println("Recherche: $searchText")
+                    ctrl.setup(searchText)
+                    ctrl.setupData(searchText)
+                }
+            }
+        })
+
+        itinerairePanel.layout = GridLayout(3, 2, 5, 5)
+        itinerairePanel.add(JLabel("Départ:"))
+        itinerairePanel.add(itineraireSearchField1)
+        itinerairePanel.add(JLabel("Arrivée:"))
+        itinerairePanel.add(itineraireSearchField2)
+        itinerairePanel.add(itineraireSearchButton)
+        itinerairePanel.isVisible = false
+
+        itineraireSearchButton.addActionListener {
+            val itinerairesearchText1 = itineraireSearchField1.text
+            val itinerairesearchText2 = itineraireSearchField2.text
+            println("Recherche départ: $itinerairesearchText1")
+            println("Recherche arrivée: $itinerairesearchText2")
+        }
+
+        constraints.gridy = 2
+        mainPanel.add(itinerairePanel, constraints)
+
+        val shapesPanel = JPanel(GridBagLayout())
+        val shapeConstraints = GridBagConstraints()
+        shapeConstraints.fill = GridBagConstraints.HORIZONTAL
+        shapeConstraints.insets = Insets(5, 5, 5, 5)
+
+        shapeConstraints.gridy = 0
+        shapesPanel.add(JLabel("Critères : "), shapeConstraints)
+
+        val carburantPanel = JPanel(FlowLayout())
+        carburantPanel.add(JLabel("Carburant :"))
+        carburantPanel.add(shapeComboBox)
+        shapeConstraints.gridy = 1
+        shapesPanel.add(carburantPanel, shapeConstraints)
+
+        shapeComboBox.addActionListener {
+            val selectedShape = shapeComboBox.selectedItem as String
+            handleShapeSelection(selectedShape)
+        }
+
+        var yPosition = 2
+        for (pair in checkBoxesImpl) {
+            addButtonWithCheckBox(pair.first, pair.first, shapesPanel, yPosition)
+            yPosition++
+        }
+
+        constraints.gridy = 3
+        constraints.gridwidth = 2
+        mainPanel.add(shapesPanel, constraints)
+
+        // Ajouter un bouton pour ouvrir la nouvelle page
+        val openTableButton = JButton("Afficher le Tableau")
+        openTableButton.addActionListener {
+            // Créer et afficher la nouvelle fenêtre avec le tableau
+            TableView()
+        }
+
+        constraints.gridy = yPosition + 1
+        constraints.gridwidth = GridBagConstraints.REMAINDER
+        constraints.fill = GridBagConstraints.HORIZONTAL
+        constraints.weightx = 1.0
+        mainPanel.add(openTableButton, constraints)
+
+        return mainPanel
+    }
+
+    private fun handleShapeSelection(Shape: String) {
+        // Liste des options présentes dans le ComboBox
+        val comboBoxOptions = listOf("Tous les types", "Gazole", "SP 98", "SP 95", "E 10", "E 85", "GPLc")
+
+        // Remettre à 0 uniquement les éléments présents dans le ComboBox et qui ne sont pas sélectionnés
+        checkStates.forEachIndexed { index, pair ->
+            if (comboBoxOptions.contains(pair.first) && pair.second == 1) {
+                checkStates[index] = Pair(pair.first, 0)
+            }
+        }
+
+        // Mettre à jour l'état de l'option nouvellement sélectionnée à 1
+        val index = checkStates.indexOfFirst { it.first == Shape }
+        if (index != -1) {
+            checkStates[index] = Pair(Shape, 1)
+        }
+
+        // Afficher les états de sélection
+        println("Sélection des formes : $checkStates")
+
+    }
+
+
+    private fun setWindowIcon() {
+        val iconPath = "C:\\Users\\jande\\Documents\\Project\\TD2\\app\\src\\main\\resources\\icone.png"
+        val iconFile = File(iconPath)
+        if (iconFile.exists()) {
+            val icon = ImageIO.read(iconFile)
+            this.iconImage = icon
+        } else {
+            println("⚠️ Icône introuvable : $iconPath")
         }
     }
-     */
 
-    //Même chose que ce qui a été mis au dessus en commentaire
-    private fun makeGui() =  JPanel().apply {
-        this.layout = FlowLayout()
-        this.add(makeCoor())
-        this.add(makeShapePanel())
+    private fun addButtonWithCheckBox(command: String, label: String, panel: JPanel, yPos: Int) {
+        val button = JButton(label).apply {
+            addActionListener(this@ShapeView)
+            actionCommand = command
+        }
+        val checkBox = JCheckBox().apply {
+            isEnabled = false
+        }
+        checkBoxes[command] = checkBox
+
+        val constraints = GridBagConstraints()
+        constraints.gridy = yPos
+        constraints.fill = GridBagConstraints.HORIZONTAL
+        constraints.insets = Insets(5, 5, 5, 5)
+
+        panel.add(button, constraints)
+        constraints.gridx = 1
+        panel.add(checkBox, constraints)
     }
 
-    private fun makeShapePanel() =  JPanel().apply {
-        this.layout = GridLayout(2,2)
-        this.add(JButton("Carre").apply {
-            addActionListener(this@ShapeView) // ici on va écouter ce que fait le button
-            actionCommand = "carre"
-        })
-        this.add(JButton("Rectangle").apply {
-            addActionListener(this@ShapeView)
-            actionCommand = "rectangle"
-        })
-        this.add(JButton("Cercle").apply {
-            addActionListener(this@ShapeView)
-            actionCommand = "cercle"
-        })
-        this.add(JButton("Elipse").apply {
-            addActionListener(this@ShapeView)
-            actionCommand = "elipse"
-        })
+    override fun actionPerformed(e: ActionEvent) {
+        val checkbox = checkBoxes[e.actionCommand]
+        if (checkbox != null) {
+            checkbox.isSelected = !checkbox.isSelected
+            val index = checkStates.indexOfFirst { it.first == e.actionCommand }
+            if (index != -1) {
+                checkStates[index] = Pair(e.actionCommand, if (checkbox.isSelected) 1 else 0)
+            }
+            println("check: $checkStates")
+        }
+        if (e.actionCommand == "itineraire") {
+            itinerairePanel.isVisible = true
+            searchPanel.isVisible = false
+            searchField.isVisible = false
+            searchButton.isVisible = false
+        } else if (e.actionCommand == "ville") {
+            itinerairePanel.isVisible = false
+            searchPanel.isVisible = true
+            searchField.isVisible = true
+            searchButton.isVisible = true
+        }
     }
 
-    private fun makeCoor() =  JPanel().apply {
-        this.layout = GridLayout(2,2)
-        this.add(JLabel("x: "))
-        this.add(xTxt)
-        this.add((JLabel("y: ")))
-        this.add((yTxt))
+    fun GetCheckState(void: Void): MutableList<Pair<String, Int>> {
+        return checkStates
     }
-
 
     override fun display() {
         isVisible = true
@@ -130,30 +270,13 @@ class ShapeView(val ctrl: DrawController): IDrawView, JFrame("Shape View"), Acti
     }
 
     override fun propertyChange(evt: PropertyChangeEvent) {
-        println("event: $evt") //a bannir et utiliser le logger à la place
-        if (evt.propertyName == "shapes") {
+        /*if (evt.propertyName == "shapes") {
             val s = evt.newValue
 
-            // On met une étoile car la comparaison s'arrête au type et pas à la valeur
             if (s is MutableList<*>) {
-                //ici on le cast mais on ne fai
-                dessin.shapes = s as MutableList<Shape>
+                mapViewer.shapes = s as MutableList<Shape>
                 this.repaint()
             }
-        }
-    }
-
-    override fun actionPerformed(e: ActionEvent) { //methode qui sert à exécuter la commande
-        if (e.actionCommand =="carre") {
-            val dot = Dot(xTxt.text.toInt(), yTxt.text.toInt()) //xtxt est un text file
-            //pour ecrire les random, on fait 1 .. 200
-            val shape = Carre(dot, Color.RED, (1..200).random())
-            ctrl.addShape(shape)
-        } else if (e.actionCommand == "rectangle") {
-            val dot = Dot(xTxt.text.toInt(), yTxt.text.toInt()) //xtxt est un text file
-            //pour ecrire les random, on fait 1 .. 200
-            val shape = Rectangle(dot, Color.RED, Dimension((1..200).random(), (1..200).random()))
-            ctrl.addShape(shape)
-        }
+        }*/
     }
 }

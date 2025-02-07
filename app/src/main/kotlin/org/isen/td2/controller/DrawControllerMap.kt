@@ -4,12 +4,13 @@ package org.isen.td2.controller
 import org.isen.td2.model.geoPosition
 import org.jxmapviewer.JXMapViewer
 import org.isen.td2.model.DrawMap
-import org.isen.td2.model.DrawData
 
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.core.ResponseDeserializable
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
+import org.isen.td2.data.Shape
+import org.isen.td2.view.IFuelView
 import org.w3c.dom.Document
 import org.w3c.dom.Element
 import java.io.File
@@ -21,25 +22,26 @@ import javax.xml.parsers.DocumentBuilderFactory
 private val logger = org.apache.logging.log4j.LogManager.getLogger("FuelAPI")
 
 // Modèle principal pour OpenDataSoft
+
 data class FuelResponse(val records: List<Record>)
 data class Record(val fields: FuelStation)
 
 // Structure des stations-service
 data class FuelStation(
-        @SerializedName("cp") val cp:String?,
-        @SerializedName("address") val address: String?,
-        @SerializedName("com_arm_name") val comArmName: String?,
-        @SerializedName("update") val updateDate: String?,
-        @SerializedName("price_gazole") val priceGazole: Double?,
-        @SerializedName("price_sp95") val priceSp95: Double?,
-        @SerializedName("price_sp98") val priceSp98: Double?,
-        @SerializedName("price_e10") val priceE10: Double?,
-        @SerializedName("price_e85") val priceE85: Double?,
-        @SerializedName("price_gplc") val priceGplc: Double?,
-        @SerializedName("services") val services: List<String>?,
-        val geo_point: List<Double>?,
+    @SerializedName("cp") val cp:String?,
+    @SerializedName("address") val address: String?,
+    @SerializedName("com_arm_name") val comArmName: String?,
+    @SerializedName("update") val updateDate: String?,
+    @SerializedName("price_gazole") val priceGazole: Double?,
+    @SerializedName("price_sp95") val priceSp95: Double?,
+    @SerializedName("price_sp98") val priceSp98: Double?,
+    @SerializedName("price_e10") val priceE10: Double?,
+    @SerializedName("price_e85") val priceE85: Double?,
+    @SerializedName("price_gplc") val priceGplc: Double?,
+    @SerializedName("services") val services: List<String>?,
+    val geo_point: List<Double>?,
 
-        )
+    )
 
 {
     class Deserializer : ResponseDeserializable<FuelResponse> {
@@ -53,15 +55,15 @@ fun fetchRecentStations(city: String): Pair<List<FuelStation>, String?> {
     val (_, _, result) = url.httpGet().responseObject(FuelStation.Deserializer())
 
     return result.fold(
-            success = {
-                val stations = it.records.map { record -> record.fields }
-                val lastUpdate = stations.mapNotNull { station -> station.updateDate }.maxOrNull()
-                Pair(stations, lastUpdate)
-            },
-            failure = {
-                logger.error("❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...")
-                fetchBackupStations(city)
-            }
+        success = {
+            val stations = it.records.map { record -> record.fields }
+            val lastUpdate = stations.mapNotNull { station -> station.updateDate }.maxOrNull()
+            Pair(stations, lastUpdate)
+        },
+        failure = {
+            logger.error("❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...")
+            fetchBackupStations(city)
+        }
     )
 }
 
@@ -70,28 +72,28 @@ fun fetchBackupStations(city: String): Pair<List<FuelStation>, String?> {
     val backupUrl = "https://donnees.roulez-eco.fr/opendata/jour"
     val (_, _, result) = backupUrl.httpGet().response()
     return result.fold(
-            success = { responseData ->
-                val tempZipFile = File.createTempFile("roulez-eco", ".zip")
-                tempZipFile.writeBytes(responseData)
+        success = { responseData ->
+            val tempZipFile = File.createTempFile("roulez-eco", ".zip")
+            tempZipFile.writeBytes(responseData)
 
-                val extractedXml = extractXmlFromZip(tempZipFile)
-                if (extractedXml != null) {
-                    val result = parseXmlStations(extractedXml, city)
+            val extractedXml = extractXmlFromZip(tempZipFile)
+            if (extractedXml != null) {
+                val result = parseXmlStations(extractedXml, city)
 
-                    // 🗑️ Supprimer les fichiers après utilisation
-                    deleteTempFiles(tempZipFile, extractedXml)
+                // 🗑️ Supprimer les fichiers après utilisation
+                deleteTempFiles(tempZipFile, extractedXml)
 
-                    return result
-                }
-
-                logger.error("❌ Impossible d'extraire le fichier XML du ZIP.")
-                Pair(emptyList(), null)
-
-            },
-            failure = {
-                logger.error("❌ Échec de récupération depuis Roulez-Éco. Aucune donnée disponible.")
-                Pair(emptyList(), null)
+                return result
             }
+
+            logger.error("❌ Impossible d'extraire le fichier XML du ZIP.")
+            Pair(emptyList(), null)
+
+        },
+        failure = {
+            logger.error("❌ Échec de récupération depuis Roulez-Éco. Aucune donnée disponible.")
+            Pair(emptyList(), null)
+        }
 
     )
 
@@ -188,21 +190,21 @@ fun parseXmlStations(xmlFile: File, city: String): Pair<List<FuelStation>, Strin
             }
 
             stations.add(
-                    FuelStation(
-                            address = adresse,
-                            cp = cp,
-                            comArmName = ville,
-                            priceGazole = priceMap["Gazole"],
-                            priceSp95 = priceMap["SP95"],
-                            priceSp98 = priceMap["SP98"],
-                            priceE10 = priceMap["E10"],
-                            priceE85 = priceMap["E85"],
-                            priceGplc = priceMap["GPLc"],
-                            services = if (servicesList.isNotEmpty()) servicesList else null,
-                            geo_point = if (latitude != null && longitude != null) listOf(latitude, longitude) else null,
-                            updateDate = lastUpdate ?: "Non disponible"
+                FuelStation(
+                    address = adresse,
+                    cp = cp,
+                    comArmName = ville,
+                    priceGazole = priceMap["Gazole"],
+                    priceSp95 = priceMap["SP95"],
+                    priceSp98 = priceMap["SP98"],
+                    priceE10 = priceMap["E10"],
+                    priceE85 = priceMap["E85"],
+                    priceGplc = priceMap["GPLc"],
+                    services = if (servicesList.isNotEmpty()) servicesList else null,
+                    geo_point = if (latitude != null && longitude != null) listOf(latitude, longitude) else null,
+                    updateDate = lastUpdate ?: "Non disponible"
 
-                    )
+                )
             )
         }
     }
@@ -218,7 +220,7 @@ fun getTagValue(tag: String, element: Element): String? {
 
 // Modèle pour la réponse de l’API
 data class ApiResponse(
-        val records: List<Record> // 👈 Correction ici, on récupère `records` et non `results`
+    val records: List<Record>
 )
 
 
@@ -226,7 +228,7 @@ data class ApiResponse(
 
 
 // 3️⃣ Intégration dans `DrawControllerMap`
-class DrawControllerMap(private val model: DrawMap?, private val modelData: DrawData?) {
+class DrawControllerMap(private val model: DrawMap) {
     private val mapViewer = JXMapViewer()
 
     fun getMapViewer(): JXMapViewer {
@@ -239,17 +241,18 @@ class DrawControllerMap(private val model: DrawMap?, private val modelData: Draw
             return
         }
 
-        model?.let {
+        model.let {
             DrawMap.AdjustMap(mapViewer)
             geoPosition = DrawMap.centerMap(adresse, mapViewer)
             DrawMap.Listen_Mouse_click(mapViewer)
             DrawMap.MapZoom(mapViewer)
-        } ?: logger.info("⚠️ Modèle DrawMap non initialisé.")
+        }
     }
 
-    fun setupData() {
-        print("Entrez le nom d'une ville : ")
-        val city = readLine()?.trim()?.uppercase() ?: "TOULON"
+    fun setupData(adresse: String) {
+        //print("Entrez le nom d'une ville : ")
+        //val city = readLine()?.trim()?.uppercase() ?: "TOULON"
+        val city = adresse
 
         logger.info("🔎 Recherche des stations-service à $city...")
 
@@ -258,9 +261,9 @@ class DrawControllerMap(private val model: DrawMap?, private val modelData: Draw
         logger.info("📅 Dernière mise à jour : $lastUpdate")
         logger.info("✅ ${stations.size} stations récupérées pour $city")
 
-        stations.forEach { station ->
-            logger.info(
-                    """
+        stations.forEach { station -> // logger.info( ATTENDS 2 s
+            println(
+                """
             📍 ${station.address},${station.cp} ${station.comArmName}
             📅 Mise à jour : ${station.updateDate ?: "Non disponible"}
             ⛽ Prix Gazole: ${station.priceGazole?: "Indisponible"}, SP95: ${station.priceSp95?: "Indisponible"}, SP98: ${station.priceSp98?: "Indisponible"}, 
@@ -270,7 +273,30 @@ class DrawControllerMap(private val model: DrawMap?, private val modelData: Draw
             --------------------------------------
             """.trimIndent()
             )
+            geoPosition =  DrawMap.centerMap("${station.address}, ${station.cp} ${station.comArmName}" , mapViewer)
+            DrawMap.addWaypoint(mapViewer, geoPosition)
         }
+    }
+
+    private val views = mutableListOf<IFuelView>()
+
+    fun displayAll(){
+        views.forEach{i: IFuelView ->
+            i.display()
+        }
+    }
+
+    fun registerView(view: IFuelView){
+        model.addObserver(view)
+        views.add(view)
+    }
+
+    fun addShape(shape: Shape){
+        model.addShape(shape)
+    }
+
+    fun updateModel(){
+        model.update(5)
     }
 }
 

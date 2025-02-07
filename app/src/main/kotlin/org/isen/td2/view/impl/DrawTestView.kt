@@ -1,7 +1,7 @@
 package org.isen.td2.view.impl
 
 import org.isen.td2.controller.DrawController
-import org.isen.td2.view.IDrawView
+import org.isen.td2.view.IFuelView
 import java.awt.Dimension
 import java.awt.GridLayout
 import java.awt.event.ActionEvent
@@ -13,7 +13,7 @@ import javax.swing.JPanel
 import javax.swing.WindowConstants
 
 //Dans la déclaration du JFrame on peut le mettre vide ou alors le titre de la fenêtre
-class DrawTestView(val ctrl:DrawController):IDrawView, JFrame("Test View"), ActionListener {
+class DrawTestView(val ctrl:DrawController):IFuelView, JFrame("Test View"), ActionListener {
     init{
         ctrl.registerView(this)
         preferredSize = Dimension(300, 200)
