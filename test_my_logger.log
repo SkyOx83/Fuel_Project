@@ -1,0 +1,384 @@
+2025-02-07 01:37:53,949 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à TOULON...
+2025-02-07 01:37:54,194 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:37:54,456 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:37:54,977 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco10349411809732982738.xml
+2025-02-07 01:37:54,979 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco2327067234630232334.zip
+2025-02-07 01:37:54,979 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:37:54,982 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour TOULON
+2025-02-07 01:38:10,207 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à azert...
+2025-02-07 01:38:10,402 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:38:10,569 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:38:10,869 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco5968534668834357973.xml
+2025-02-07 01:38:10,869 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\Benja\AppData\Local\Temp\roulez-eco8293940642706168544.zip
+2025-02-07 01:38:10,870 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:38:10,870 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 0 stations récupérées pour azert
+2025-02-07 01:45:38,035 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 01:45:38,280 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:45:38,719 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:45:39,521 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco5113249797344097775.xml
+2025-02-07 01:45:39,522 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco7028131260353397439.zip
+2025-02-07 01:45:39,522 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:45:39,525 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 01:56:30,247 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 01:56:30,464 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:56:31,097 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:56:31,621 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco1965352573896221290.xml
+2025-02-07 01:56:31,622 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco8849675799631557574.zip
+2025-02-07 01:56:31,623 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:56:31,626 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 01:56:58,139 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à paris...
+2025-02-07 01:56:58,290 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:56:58,692 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:56:59,130 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2906068794920390063.xml
+2025-02-07 01:56:59,131 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13082972690519294231.zip
+2025-02-07 01:56:59,131 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:56:59,131 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 53 stations récupérées pour paris
+2025-02-07 01:57:09,748 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 01:57:09,946 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 01:57:10,446 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 01:57:10,733 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16990449003510864613.xml
+2025-02-07 01:57:10,733 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9912951511965772321.zip
+2025-02-07 01:57:10,734 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 01:57:10,734 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:20:34,273 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:20:34,509 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:20:35,036 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:20:35,557 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13377170817027757286.xml
+2025-02-07 02:20:35,558 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13327222143659619793.zip
+2025-02-07 02:20:35,558 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:20:35,561 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:26:20,868 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:26:21,121 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:26:21,627 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:26:22,444 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco7573832518066835066.xml
+2025-02-07 02:26:22,445 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco11389149914834940619.zip
+2025-02-07 02:26:22,445 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:26:22,448 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:27:57,209 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:27:57,439 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:27:57,871 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:27:58,653 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco14411387543007424343.xml
+2025-02-07 02:27:58,654 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco6673972858414611487.zip
+2025-02-07 02:27:58,654 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:27:58,655 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:29:07,968 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:29:08,214 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:29:08,804 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:29:09,486 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco6422794287262265361.xml
+2025-02-07 02:29:09,487 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13755730300766074305.zip
+2025-02-07 02:29:09,487 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:29:09,491 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:29:22,918 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à paris...
+2025-02-07 02:29:23,085 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:29:23,853 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:29:24,283 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco15753001893543734822.xml
+2025-02-07 02:29:24,284 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco3916537993700886823.zip
+2025-02-07 02:29:24,284 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:29:24,284 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 53 stations récupérées pour paris
+2025-02-07 02:29:34,894 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:29:35,046 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:29:35,476 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:29:35,917 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco11521542758746180587.xml
+2025-02-07 02:29:35,918 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco484793580240857998.zip
+2025-02-07 02:29:35,918 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:29:35,918 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:29:56,582 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 02:29:56,802 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:29:57,366 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:29:57,919 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco1838338409491699326.xml
+2025-02-07 02:29:57,922 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2789687907575149895.zip
+2025-02-07 02:29:57,922 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:29:57,926 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 02:30:06,998 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à paris...
+2025-02-07 02:30:07,158 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 02:30:07,551 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 02:30:08,027 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco4609325384643761586.xml
+2025-02-07 02:30:08,028 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9385806368546804490.zip
+2025-02-07 02:30:08,028 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 02:30:08,028 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 53 stations récupérées pour paris
+2025-02-07 03:48:38,199 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:48:38,441 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:48:38,881 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:48:39,393 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12628329170237697377.xml
+2025-02-07 03:48:39,394 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12731072447728247850.zip
+2025-02-07 03:48:39,394 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:48:39,398 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:50:17,935 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:50:18,200 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:50:18,737 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:50:19,243 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco380527972594196352.xml
+2025-02-07 03:50:19,244 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2216774597065411527.zip
+2025-02-07 03:50:19,244 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:50:19,246 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:52:17,185 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:52:17,412 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:52:17,835 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:52:18,385 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco14652808224658755708.xml
+2025-02-07 03:52:18,387 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco15431065210461868167.zip
+2025-02-07 03:52:18,387 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:52:18,390 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:53:16,553 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:53:17,206 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:53:17,702 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:53:18,241 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12016597100705718081.xml
+2025-02-07 03:53:18,242 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco10387118822462963349.zip
+2025-02-07 03:53:18,242 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:53:18,246 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:53:54,471 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:53:54,676 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:53:55,136 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:53:55,655 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco15946966933556422150.xml
+2025-02-07 03:53:55,656 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco3783547152477444810.zip
+2025-02-07 03:53:55,656 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:53:55,658 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:54:04,498 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:54:04,649 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:54:05,157 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:54:05,536 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16691263725509211925.xml
+2025-02-07 03:54:05,536 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16166708420641821947.zip
+2025-02-07 03:54:05,537 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:54:05,537 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:54:52,525 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:54:52,746 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:54:53,173 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:54:53,708 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16020146609997177614.xml
+2025-02-07 03:54:53,709 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12499546538797766620.zip
+2025-02-07 03:54:53,710 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:54:53,713 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:56:22,494 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:56:22,714 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:56:23,154 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:56:23,697 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco6820629961905274499.xml
+2025-02-07 03:56:23,698 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16674458009384645903.zip
+2025-02-07 03:56:23,698 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:56:23,702 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:56:39,570 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:56:39,753 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:56:40,166 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:56:40,633 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9510566962110385818.xml
+2025-02-07 03:56:40,634 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2532021156316965775.zip
+2025-02-07 03:56:40,634 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:56:40,634 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:56:59,677 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:56:59,986 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:57:00,473 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:57:00,903 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2640055731801103678.xml
+2025-02-07 03:57:00,904 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9553285982913125412.zip
+2025-02-07 03:57:00,904 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:57:00,904 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:59:06,943 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:59:07,167 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:59:07,739 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:59:08,275 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco8704069966723720771.xml
+2025-02-07 03:59:08,276 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9817256679208726264.zip
+2025-02-07 03:59:08,277 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:59:08,279 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 03:59:48,628 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 03:59:48,827 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 03:59:49,328 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 03:59:49,847 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco15386170196061653441.xml
+2025-02-07 03:59:49,848 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16059214878987306619.zip
+2025-02-07 03:59:49,848 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 03:59:49,850 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:00:30,301 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:00:30,526 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:00:30,957 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:00:31,456 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco11370432256253026227.xml
+2025-02-07 04:00:31,456 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco9972748728391136611.zip
+2025-02-07 04:00:31,457 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:00:31,460 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:00:46,694 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:00:46,887 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:00:47,396 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:00:47,689 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco10267265191810379669.xml
+2025-02-07 04:00:47,691 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco6442460770697488393.zip
+2025-02-07 04:00:47,691 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:00:47,691 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:13:17,437 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:13:17,998 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:13:18,450 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:13:18,974 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco4185134433773171882.xml
+2025-02-07 04:13:18,975 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13695449479839070391.zip
+2025-02-07 04:13:18,975 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:13:18,979 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:13:25,757 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:13:25,908 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:13:26,320 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:13:26,616 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco1367936850636556982.xml
+2025-02-07 04:13:26,616 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco866720636622980501.zip
+2025-02-07 04:13:26,616 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:13:26,617 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:16:32,437 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:16:32,678 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:16:33,228 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:16:33,756 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco5439241612364229655.xml
+2025-02-07 04:16:33,757 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13714701966550905718.zip
+2025-02-07 04:16:33,757 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:16:33,761 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:17:33,731 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:17:33,999 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:17:34,457 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:17:34,969 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco626096455272532368.xml
+2025-02-07 04:17:34,970 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12294450791897194321.zip
+2025-02-07 04:17:34,970 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:17:34,974 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:17:58,893 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:17:59,096 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:17:59,516 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:18:00,028 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco14703668152478482594.xml
+2025-02-07 04:18:00,029 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco17060836963386949850.zip
+2025-02-07 04:18:00,029 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:18:00,033 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:18:22,211 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:18:22,419 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:18:23,940 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:18:24,451 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13284819155845069987.xml
+2025-02-07 04:18:24,452 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco3832421340553780036.zip
+2025-02-07 04:18:24,452 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:18:24,455 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:20:36,433 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:20:36,712 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:20:37,138 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:20:37,642 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco14009948523337089273.xml
+2025-02-07 04:20:37,643 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12660710356160556177.zip
+2025-02-07 04:20:37,643 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:20:37,646 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:26:09,886 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:26:10,103 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:26:10,528 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:26:11,031 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16875789892679082198.xml
+2025-02-07 04:26:11,033 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco13051156617162776578.zip
+2025-02-07 04:26:11,033 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:26:11,036 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:28:01,283 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:28:01,528 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:28:02,130 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:28:02,654 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12958990020949486067.xml
+2025-02-07 04:28:02,655 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco16491631931582156082.zip
+2025-02-07 04:28:02,656 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:28:02,659 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:32:09,885 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:32:10,112 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:32:10,669 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:32:11,192 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco216645513306934060.xml
+2025-02-07 04:32:11,193 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco5449240682112098710.zip
+2025-02-07 04:32:11,194 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:32:11,196 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:33:24,046 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:33:24,274 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:33:24,692 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:33:25,219 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco12781787034919609950.xml
+2025-02-07 04:33:25,219 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco10644057711033958161.zip
+2025-02-07 04:33:25,221 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:33:25,223 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:38:50,970 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:38:51,202 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:38:51,755 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:38:52,259 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco2257071935567943583.xml
+2025-02-07 04:38:52,260 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco539301209967620746.zip
+2025-02-07 04:38:52,261 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:38:52,264 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:42:16,825 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:42:17,083 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:42:17,583 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:42:18,098 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco4858842539808735670.xml
+2025-02-07 04:42:18,099 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco7619413729692438021.zip
+2025-02-07 04:42:18,099 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:42:18,103 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:42:34,022 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:42:34,240 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:42:34,683 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:42:35,198 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco4394195154573005429.xml
+2025-02-07 04:42:35,202 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco4872415127742101983.zip
+2025-02-07 04:42:35,202 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:42:35,205 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 04:57:55,621 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 04:57:55,880 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 04:57:56,319 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 04:57:56,855 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco15752751597621165652.xml
+2025-02-07 04:57:56,856 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco212148013268777342.zip
+2025-02-07 04:57:56,857 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 04:57:56,861 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 05:07:20,741 INFO o.i.t.m.DrawMap$Companion [main] Coordonnees de PARIS
+2025-02-07 05:08:35,547 INFO o.i.t.m.DrawMap$Companion [main] Coordonnees de PARIS
+2025-02-07 05:08:42,220 INFO o.i.t.v.i.ShapeView$makeGui$2 [AWT-EventQueue-0] Recherche: toulon
+2025-02-07 05:08:42,291 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de toulon
+2025-02-07 05:08:42,294 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 🔎 Recherche des stations-service à toulon...
+2025-02-07 05:08:42,556 ERROR o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] ❌ Échec de récupération depuis Opendatasoft, tentative avec Roulez-Éco...
+2025-02-07 05:08:43,028 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 📂 Extraction du fichier XML : PrixCarburants_quotidien_20250206.xml
+2025-02-07 05:08:43,537 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier XML supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco10270180537888331678.xml
+2025-02-07 05:08:43,538 INFO o.i.t.c.DrawControllerMapKt [AWT-EventQueue-0] 🗑️ Fichier ZIP supprimé : C:\Users\jande\AppData\Local\Temp\roulez-eco11830713244884214910.zip
+2025-02-07 05:08:43,538 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📅 Dernière mise à jour : null
+2025-02-07 05:08:43,541 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] ✅ 8 stations récupérées pour toulon
+2025-02-07 05:08:43,555 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 283 Rue Henri Sainte-Claire Deville,83100 TOULON
+📅 Mise à jour : 2025-02-06T09:46:35
+⛽ Prix Gazole: 1.682, SP95: 1.812, SP98: 1.859, 
+   E10: 1.748, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Station de gonflage, Piste poids lourds, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12753, 5.97764)
+--------------------------------------
+2025-02-07 05:08:43,579 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 283 Rue Henri Sainte-Claire Deville, 83100 TOULON
+2025-02-07 05:08:43,586 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,587 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 160 BOULEVARD G.CLEMENCEAU,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.779, SP95: Indisponible, SP98: 1.949, 
+   E10: 1.839, E85: 0.786, GPLc: 1.019
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Piste poids lourds, Lavage automatique, Lavage manuel, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.12367, 5.93697)
+--------------------------------------
+2025-02-07 05:08:43,614 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 160 BOULEVARD G.CLEMENCEAU, 83000 TOULON
+2025-02-07 05:08:43,617 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,617 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 AV INFANTERIE DE MARINE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage automatique, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.11313, 5.93462)
+--------------------------------------
+2025-02-07 05:08:43,640 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de AV INFANTERIE DE MARINE, 83000 TOULON
+2025-02-07 05:08:43,642 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,643 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 322 AV.LE BELLEGOU RODE,83000 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.682, SP95: Indisponible, SP98: 1.859, 
+   E10: 1.746, E85: 0.779, GPLc: 0.999
+🛠 Services: Toilettes publiques, Boutique alimentaire, Restauration à emporter, Station de gonflage, Carburant additivé, Lavage automatique, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.1177114581, 5.94101238436)
+--------------------------------------
+2025-02-07 05:08:43,665 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 322 AV.LE BELLEGOU RODE, 83000 TOULON
+2025-02-07 05:08:43,668 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,669 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 2338 Avenue Joseph Gasquet,83100 TOULON
+📅 Mise à jour : 2025-02-06T05:30:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Vente de fioul domestique, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.11874, 5.9794)
+--------------------------------------
+2025-02-07 05:08:43,691 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 2338 Avenue Joseph Gasquet, 83100 TOULON
+2025-02-07 05:08:43,694 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,695 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 508 AVENUE FOCH,83100 TOULON
+📅 Mise à jour : 2025-02-06T00:01:00
+⛽ Prix Gazole: 1.769, SP95: Indisponible, SP98: 1.946, 
+   E10: 1.836, E85: 0.786, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Wifi, Automate CB 24/24, DAB (Distributeur automatique de billets)
+📌 GPS: 43.128, 5.919)
+--------------------------------------
+2025-02-07 05:08:43,715 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 508 AVENUE FOCH, 83100 TOULON
+2025-02-07 05:08:43,718 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,719 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 620 Rue David,83200 Toulon
+📅 Mise à jour : 2025-02-06T20:45:00
+⛽ Prix Gazole: 1.749, SP95: Indisponible, SP98: 1.929, 
+   E10: 1.829, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Station de gonflage, Carburant additivé, Lavage manuel, Services réparation / entretien, Vente de gaz domestique (Butane, Propane)
+📌 GPS: 43.13945251, 5.88654834)
+--------------------------------------
+2025-02-07 05:08:43,744 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 620 Rue David, 83200 Toulon
+2025-02-07 05:08:43,747 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
+2025-02-07 05:08:43,748 INFO o.i.t.c.DrawControllerMap [AWT-EventQueue-0] 📍 95 Boulevard Général Brosset,83200 TOULON
+📅 Mise à jour : 2024-10-15T21:03:47
+⛽ Prix Gazole: 1.729, SP95: 1.869, SP98: 1.969, 
+   E10: Indisponible, E85: Indisponible, GPLc: Indisponible
+🛠 Services: Toilettes publiques, Boutique alimentaire, Boutique non alimentaire, Restauration à emporter, Restauration sur place, Station de gonflage, Carburant additivé, Lavage automatique, Vente de gaz domestique (Butane, Propane), DAB (Distributeur automatique de billets)
+📌 GPS: 43.12814, 5.90563)
+--------------------------------------
+2025-02-07 05:08:43,773 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] Coordonnees de 95 Boulevard Général Brosset, 83200 TOULON
+2025-02-07 05:08:43,776 INFO o.i.t.m.DrawMap$Companion [AWT-EventQueue-0] enter in custom waypoint
